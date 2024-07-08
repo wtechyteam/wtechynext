@@ -1,7 +1,7 @@
 "use client"
 import { Link } from 'react-router-dom';
 import { scrollTop } from './../../common/utils'
-import ctaImage from '../../../assets/Images/homepage/man.png'
+//import ctaImage from '../../../assets/Images/homepage/man.png'
 import { BrowserRouter } from 'react-router-dom';
 import Image from 'next/image';
 

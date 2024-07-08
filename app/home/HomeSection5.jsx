@@ -1,6 +1,8 @@
 "use client"
-import serviceIcon1 from '../../../assets/Images/homepage/digitalMarketing.png'
-import serviceIcon2 from '../../../assets/Images/homepage/MarketingStrategies.png'
+// import serviceIcon1 from '../../../assets/Images/homepage/digitalMarketing.png'
+// import serviceIcon2 from '../../../assets/Images/homepage/MarketingStrategies.png'
+import serviceIcon2 from './../../public/assets/Images/homepage/MarketingStrategies.png'
+import serviceIcon1 from './../../public/assets/Images/homepage/digitalMarketing.png'
 import { Router, useNavigate } from 'react-router-dom'
 import Image from 'next/image'
 

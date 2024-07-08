@@ -1,12 +1,13 @@
 "use client"
 import Slider from 'react-slick';
 //import testimonialImage from './../../../assets/Images/homepage/testi-2.png';
-import testimonial1 from "./../../../assets/Images/homepage/testimonial1.png";
-import testimonial2 from "./../../../assets/Images/homepage/testimonial2.png";
-import testimonial3 from "./../../../assets/Images/homepage/testimonial3.png";
-import testimonial4 from "./../../../assets/Images/homepage/testimonial4.png";
-import testimonial5 from "./../../../assets/Images/homepage/testimonial5.png";
-import testimonial6 from "./../../../assets/Images/homepage/testimonial6.png";
+import testimonial1 from "./../../public/assets/Images/homepage/testimonial1.png"
+import testimonial2 from "./../../public/assets/Images/homepage/testimonial2.png"
+import testimonial3 from "./../../public/assets/Images/homepage/testimonial3.png"
+import testimonial4 from "./../../public/assets/Images/homepage/testimonial4.png"
+import testimonial5 from "./../../public/assets/Images/homepage/testimonial5.png"
+import testimonial6 from "./../../public/assets/Images/homepage/testimonial6.png"
+
 import Image from 'next/image';
 
 
