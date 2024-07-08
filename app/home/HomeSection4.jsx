@@ -1,11 +1,14 @@
-"use client"
+'use client'
 import { Link } from 'react-router-dom';
-import { scrollTop } from './../../common/utils'
+import { scrollTop } from '../../common/utils'
 //import ctaImage from '../../../assets/Images/homepage/man.png'
 import { BrowserRouter } from 'react-router-dom';
 import Image from 'next/image';
 
+
 const HomeSection4 = () => {
+
+
     return (
         <BrowserRouter>
         <section className='sectionPadding '>
@@ -25,7 +28,7 @@ const HomeSection4 = () => {
                 </div>
             </div>
         </section>
-        </BrowserRouter>
+</BrowserRouter>
     );
 };
 

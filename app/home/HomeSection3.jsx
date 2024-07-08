@@ -1,10 +1,15 @@
+'use client'
+import { BrowserRouter } from 'react-router-dom'
 import serviceIcon1 from './../../public/assets/Images/homepage/Digitalmarketing.svg'
 import serviceIcon2 from './../../public/assets/Images/homepage/MarketingStrategies.svg'
 import serviceIcon3 from './../../public/assets/Images/homepage/StrongRelations.svg'
 import serviceIcon4 from './../../public/assets/Images/homepage/SustainandGrow.svg'
+
 import Image from 'next/image'
 
-const HomeSection2 = () => {
+const HomeSection3 = () => {
+
+
 
     const serviceData = [
         {
@@ -31,6 +36,7 @@ const HomeSection2 = () => {
     ];
 
     return (
+        <BrowserRouter>
         <section className='sectionPadding bg-gray'>
             <div className="container text-center">
                 <div className="sectionTopInfo" data-aos="fade-up" data-aos-duration="1500">
@@ -51,7 +57,8 @@ const HomeSection2 = () => {
                 </div>
             </div>
         </section>
+        </BrowserRouter>
     );
 };
 
-export default HomeSection2;
+export default HomeSection3;

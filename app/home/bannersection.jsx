@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -6,11 +6,11 @@ import 'slick-carousel/slick/slick-theme.css';
 import bannerImage1 from './../../public/assets/Images/homepage/bannerInner1.png'
 import bannerImage2 from './../../public/assets/Images/homepage/bannerInner2.jpg';
 import bannerImage3 from './../../public/assets/Images/homepage/bannerInner3.jpg';
-import {scrollTop} from './../../common/utils'
-import { Link } from 'react-router-dom';
-import { Helmet } from 'react-helmet';
+import {scrollTop} from '../../common/utils'
+import { Link } from 'react-router-dom'
 import { BrowserRouter } from 'react-router-dom'
 import Image from 'next/image';
+
 
 const BannerSlider = () => {
   const bannerSliderSettings = {
@@ -25,13 +25,12 @@ const BannerSlider = () => {
     autoplaySpeed: 5000 // Set the autoplay speed in milliseconds
   };
 
+
+
   return (
     <>
-    <BrowserRouter>
-    <Helmet>
-    <meta name="title" content="Full-Stack Digital Marketing Agency: Scale Your Business" />
-    <meta name="description" content="Unlock growth with our full-stack digital marketing solution. Scale your business with proven strategies in SEO, PPC, Social media, Website design, and more." />
-    </Helmet>
+<BrowserRouter>
+    
     
     <div className="banner-slider">
       <div className="hero-shapes">
@@ -68,7 +67,8 @@ const BannerSlider = () => {
         </div>
       </div>
     </div>
-    </BrowserRouter></>
+    </BrowserRouter>
+    </>
   );
 };
 

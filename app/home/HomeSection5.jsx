@@ -1,19 +1,20 @@
-"use client"
+'use client'
 // import serviceIcon1 from '../../../assets/Images/homepage/digitalMarketing.png'
 // import serviceIcon2 from '../../../assets/Images/homepage/MarketingStrategies.png'
 import serviceIcon2 from './../../public/assets/Images/homepage/MarketingStrategies.png'
 import serviceIcon1 from './../../public/assets/Images/homepage/digitalMarketing.png'
-import { Router, useNavigate } from 'react-router-dom'
+import { BrowserRouter, Router, useNavigate } from 'react-router-dom'
 import Image from 'next/image'
+import { useMounted } from "../../common/unmounted";
 
 
 const HomeSection5 = () => {
-    <Router> const navigate = useNavigate()</Router>
+  /*   <Router> const navigate = useNavigate()</Router>
     
     const handleCardPath = (service) => {
         navigate(`${service.path}`)
         window.scroll(0, 0)
-    }
+    } */
 
     const serviceData = [
         {
@@ -46,7 +47,9 @@ const HomeSection5 = () => {
 
 
 
+
     return (
+        <BrowserRouter>
         <section className='sectionPadding pt-0'>
             <div className="container text-center">
                 <div className="sectionTopInfo" data-aos="fade-up" data-aos-duration="1500">
@@ -69,7 +72,7 @@ const HomeSection5 = () => {
                 </div>
             </div>
         </section>
-
+        </BrowserRouter>
     );
 };
 

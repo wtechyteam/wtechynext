@@ -1,4 +1,4 @@
-"use client"
+'use client'
 import { FiChevronsRight, FiClock } from "react-icons/fi";
 import { BrowserRouter, Link } from 'react-router-dom';
 import { scrollTop } from '../../common/utils'

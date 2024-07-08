@@ -1,6 +1,7 @@
-"use client"
+'use client'
 import Slider from 'react-slick';
 //import testimonialImage from './../../../assets/Images/homepage/testi-2.png';
+
 import testimonial1 from "./../../public/assets/Images/homepage/testimonial1.png"
 import testimonial2 from "./../../public/assets/Images/homepage/testimonial2.png"
 import testimonial3 from "./../../public/assets/Images/homepage/testimonial3.png"
@@ -9,6 +10,7 @@ import testimonial5 from "./../../public/assets/Images/homepage/testimonial5.png
 import testimonial6 from "./../../public/assets/Images/homepage/testimonial6.png"
 
 import Image from 'next/image';
+import { BrowserRouter } from 'react-router-dom';
 
 
 
@@ -84,7 +86,11 @@ const HomeSection7 = () => {
         ]
     };
 
+    // const mounted = useMounted();
+    // if(!mounted) return null;
+
     return (
+        <BrowserRouter>
         <section className='sectionPadding'>
             <div className="container text-center" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
                 <div className="sectionTopInfo" >
@@ -119,7 +125,7 @@ const HomeSection7 = () => {
                 </Slider>
             </div>
         </section>
-
+        </BrowserRouter>
     );
 };
 

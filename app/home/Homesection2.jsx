@@ -1,7 +1,11 @@
+'use client'
 import Image from 'next/image';
 import bannerImage from './../../public/assets/Images/homepage/year-of-img.png'
 
+
 const HomeSection2 = () => {
+
+
   return (
     <section className="sectionPadding homepage-slider">
       <div className="container">

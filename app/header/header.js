@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import './headerStyle.scss';
 import HeaderNavbar from './navbar/navbar.jsx';
+import { BrowserRouter } from 'react-router-dom';
 
 
 const Header = ({ activeTab, setActiveTab, currentPath, setCurrentPath }) => {
@@ -16,12 +17,13 @@ const Header = ({ activeTab, setActiveTab, currentPath, setCurrentPath }) => {
 
 
     return (
-        <>
+        <> <BrowserRouter>
             <header className={`headerMain ${isScrolled ? 'sticky' : ''}`}>
                 <div className='container'>
                     <HeaderNavbar activeTab={activeTab} setActiveTab={setActiveTab} />
                 </div>
             </header>
+            </BrowserRouter>
         </>
     );
 };
