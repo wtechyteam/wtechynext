@@ -1,0 +1,174 @@
+{
+    "posts": [
+        {
+            "id": 1,
+            "link": "why-hire-an-seo-expert-for-your-restaurant-business-in-texas",
+            "title": "Why hire an SEO expert for your Restaurant Business in Texas?",
+            "category": "Web Development",
+            "tags": [
+                "HTML",
+                "JavaScript"
+            ],
+            "publishedAt": "7 April 2022",
+            "imageUrl": "https://i0.wp.com/www.wtechy.com/wp-content/uploads/2022/06/happy-freelancer-with-tablet-laptop-computer-coffee-shop-scaled.jpg",
+            "authorName": "John Doe",
+            "isFeatured": true,
+            "shortInfo": "The success of a restaurant is significantly influenced by its web presence. Are you ranked highly? Are people using your website to make reservations for tables? If not, you want to consider hiring a professional SEO agency in USA. ",
+            "content": "<p>The success of a restaurant is significantly influenced by its web presence. Are you ranked highly? Are people using your website to make reservations for tables? If not, you want to consider hiring a professional SEO agency in USA. A website’s or web page’s exposure in search engine results pages is improved through the process of SEO, or search engine optimization (SERPS). A website’s traffic from search engines is what an SEO expert seeks to achieve.</p><p>A restaurant SEO strategy involves optimizing the website, social media accounts, and other online properties where you already have or want to have a presence. Without an SEO specialist, it can be challenging for restaurants to rise in search engine rank. Restaurant SEO offers several advantages for businesses:</p>"
+        },
+        {
+            "id": 2,
+            "link": "why-digital-marketing-is-required-for-your-brand",
+            "title": "Why Digital Marketing is required for your brand?",
+            "category": "Artificial Intelligence",
+            "tags": [
+                "Python",
+                "Machine Learning",
+                "Deep Learning",
+                "Computer Vision"
+            ],
+            "publishedAt": "9 Mar 2022",
+            "imageUrl": "https://i0.wp.com/www.wtechy.com/wp-content/uploads/2022/06/marvin-meyer-SYTO3xs06fU-unsplash-1-scaled.jpg",
+            "authorName": "William Doe",
+            "isFeatured": true,
+            "shortInfo": "In today's settings and markets, which are consistently changing, digital marketing is crucial. Businesses can speed up their branding and marketing efforts while increasing reach and lowering expenses thanks to the strategies used by digital marketing of brands and agencies. The rise in internet usage is entirely to blame for this surprising development."
+        },
+        {
+            "id": 3,
+            "link": "things-you-must-know-about-shopify-theme-development",
+            "title": "Things You Must Know About Shopify Theme Development",
+            "category": "UI/UX Design",
+            "tags": [
+                "UI",
+                "UX",
+                "Design",
+                "Figma",
+                "Sketch",
+                "Adobe XD",
+                "Web Design",
+                "Product Design",
+                "Branding"
+            ],
+            "publishedAt": "15 Feb 2022",
+            "imageUrl": "https://www.wtechy.com/wp-content/uploads/2021/09/blog2-1.webp",
+            "authorName": "Jane Cooper",
+            "isFeatured": true,
+            "shortInfo": "Shopify is one of the immense stages that create opportunities for almost any person who uses it, going from site subject matter experts and originators to huge assistance associations. Shopify developers use the ecosystem of the stage to help merchants with online shop improvement and plans."
+        },
+        {
+            "id": 4,
+            "title": "Android Development with Kotlin vs Java",
+            "category": "Mobile Development",
+            "tags": [
+                "Andro",
+                "Java",
+                "Kotlin"
+            ],
+            "publishedAt": "10 Jan 2022",
+            "thumbnailUrl": "/images/posts/post-thumbnail-4.png",
+            "imageUrl": "https://i0.wp.com/www.wtechy.com/wp-content/uploads/2022/06/marvin-meyer-SYTO3xs06fU-unsplash-1-scaled.jpg",
+            "authorName": "Diana Lim",
+            "isFeatured": true
+        },
+        {
+            "id": 5,
+            "title": "React with TypeScript for Beginners",
+            "category": "Web Development",
+            "tags": [
+                "React",
+                "JavaScript",
+                "TypeScript"
+            ],
+            "publishedAt": "01 Jan 2022",
+            "thumbnailUrl": "/images/posts/post-thumbnail-4.png",
+            "imageUrl": "https://i0.wp.com/www.wtechy.com/wp-content/uploads/2022/06/marvin-meyer-SYTO3xs06fU-unsplash-1-scaled.jpg",
+            "authorName": "Dan Wilson",
+            "isFeatured": false
+        },
+        {
+            "id": 6,
+            "link": "Effective Web Design Principles Every Web Designer Must Know",
+            "title": "Effective Web Design Principles Every Web Designer Must Know",
+            "category": "Artificial Intelligence",
+            "tags": [
+                "Python",
+                "Machine Learning",
+                "Deep Learning",
+                "Computer Vision"
+            ],
+            "publishedAt": "9 Mar 2022",
+            "imageUrl": "https://i0.wp.com/www.wtechy.com/wp-content/uploads/2022/06/marvin-meyer-SYTO3xs06fU-unsplash-1-scaled.jpg",
+            "authorName": "William Doe",
+            "isFeatured": true,
+            "shortInfo": "KW - Magento web design Online presence is the primary"
+        },
+        {
+            "id": 7,
+            "link": "why-digital-marketing-is-required-for-your-brand",
+            "title": "Some Interesting Facts About Shopify Development Services",
+            "category": "Artificial Intelligence",
+            "tags": [
+                "Python",
+                "Machine Learning",
+                "Deep Learning",
+                "Computer Vision"
+            ],
+            "publishedAt": "9 Mar 2022",
+            "imageUrl": "https://i0.wp.com/www.wtechy.com/wp-content/uploads/2022/06/marvin-meyer-SYTO3xs06fU-unsplash-1-scaled.jpg",
+            "authorName": "William Doe",
+            "isFeatured": true,
+            "shortInfo": "Some Interesting Facts About Shopify."
+        },
+        {
+            "id": 10,
+            "link": "why-digital-marketing-is-required-for-your-brand",
+            "title": "Effective Strategies Every Web Developer Should Know Before Website Development",
+            "category": "Artificial Intelligence",
+            "tags": [
+                "Python",
+                "Machine Learning",
+                "Deep Learning",
+                "Computer Vision"
+            ],
+            "publishedAt": "9 Mar 2022",
+            "imageUrl": "https://i0.wp.com/www.wtechy.com/wp-content/uploads/2022/06/marvin-meyer-SYTO3xs06fU-unsplash-1-scaled.jpg",
+            "authorName": "William Doe",
+            "isFeatured": true,
+            "shortInfo": "Effective Strategies Every Web"
+        },
+        {
+            "id": 8,
+            "link": "why-digital-marketing-is-required-for-your-brand",
+            "title": "The Role of a Shopify Development agency in the Growth of Your Business",
+            "category": "Artificial Intelligence",
+            "tags": [
+                "Python",
+                "Machine Learning",
+                "Deep Learning",
+                "Computer Vision"
+            ],
+            "publishedAt": "9 Mar 2022",
+            "imageUrl": "https://i0.wp.com/www.wtechy.com/wp-content/uploads/2022/06/marvin-meyer-SYTO3xs06fU-unsplash-1-scaled.jpg",
+            "authorName": "William Doe",
+            "isFeatured": true,
+            "shortInfo": "The Role of a Shopify Development agency in the Growth"
+        },
+        {
+            "id": 9,
+            "link": "why-digital-marketing-is-required-for-your-brand",
+            "title": "5 Tips To Build An Effective Business Website Design",
+            "category": "Artificial Intelligence",
+            "tags": [
+                "Python",
+                "Machine Learning",
+                "Deep Learning",
+                "Computer Vision"
+            ],
+            "publishedAt": "9 Mar 2022",
+            "imageUrl": "https://i0.wp.com/www.wtechy.com/wp-content/uploads/2022/06/marvin-meyer-SYTO3xs06fU-unsplash-1-scaled.jpg",
+            "authorName": "William Doe",
+            "isFeatured": true,
+            "shortInfo": "5 Tips To Build An Effective Business Website"
+        }
+    ]
+}

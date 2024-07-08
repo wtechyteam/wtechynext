@@ -1,0 +1,244 @@
+$color_1: #3E7671;
+$color_2: #131725;
+$color_3: #333333;
+$color_4: #333333;
+$color_6: #3E7671;
+$background-color_1: #e2e2e2;
+$background-color_2: #3E7671;
+$background-color_3: transparent;
+
+.headerMain {
+  left: 0;
+  top: 0;
+  width: 100vw;
+  position: fixed;
+  transition: all ease-in-out .3s;
+  z-index: 99;
+
+  &.sticky {
+    background-color: #fff;
+    box-shadow: 0px 0px 10px 0px #00000020;
+
+    .siteLogo {
+      img {
+        width: 80px;
+        @media (max-width: 1200px) {
+          width: 70px;
+        }
+      }
+    }
+
+  }
+
+  .siteLogo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    position: relative;
+
+    img {
+      width: 100%;
+      transition: all ease-in-out .3s;
+    }
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    a {
+      display: block;
+      text-decoration: none;
+    }
+  }
+
+  .navList {
+    align-items: center;
+  }
+
+  .navItemWrap {
+    margin-left: 30px;
+    position: relative;
+
+    .navItem {
+      display: inline-block;
+      color: #000;
+      font-weight: 600;
+      text-transform: capitalize;
+      cursor: pointer;
+      padding: 12px 0px;
+
+      &::before {
+        content: '';
+        width: 100%;
+        height: 3px;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background-color: var(--secondary);
+        opacity: 0;
+      }
+
+      &.active,
+      &:hover {
+        color: var(--secondary);
+
+        &::before {
+          opacity: 1;
+        }
+      }
+
+      &.headerBtn {
+        border: 1px solid var(--primary);
+        background: var(--primary);
+        color: #fff !important;
+        border-radius: 10px 0px 10px 0px;
+        min-height: 56px;
+        min-width: 160px;
+        text-align: center;
+        padding: 16px 30px;
+        transition: all 0.5s;
+
+        &::before {
+          opacity: 0;
+        }
+
+        &:hover {
+          background: #fff;
+          border-radius: 0px 10px 0px 10px;
+          color: var(--primary) !important;
+        }
+      }
+    }
+  }
+
+  .megaMenuWrapper {
+    position: absolute;
+    top: 100%;
+    left: -100px;
+    width: 800px;
+    padding: 16px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1254901961);
+    z-index: 9 !important;
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    transition: all ease-in-out 0.5s;
+    grid-gap: 30px;
+    .menuWrap {
+      width: calc(50% - 15px);
+    }
+
+    .itemLink {
+      text-transform: capitalize;
+      margin-bottom: 5px;
+      font-weight: 500;
+      cursor: pointer;
+      font-size: 16px;
+      transition: all ease-in-out .3s;
+      color: #000;
+
+      &::before {
+        content: "\f061";
+        font-family: "FontAwesome";
+        margin-right: 5px;
+      }
+
+      &:hover,
+      &.active {
+        color: var(--secondary);
+        margin-left: 5px;
+      }
+    }
+  }
+}
+
+button.navbar-toggler {
+  border: none;
+  padding: 0;
+  color: #000 !important;
+  font-size: 25px;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.mobileMenu {
+  padding: 0;
+  list-style: none;
+  .navItem{
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 15px 30px 15px 10px;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+
+    &.active{
+      color: var(--secondary);
+      background-color: var(--);
+    }
+  }
+  .accordion-body{
+    padding: 0;
+    border-left: 2px solid var(--secondary);
+    ul{
+      list-style: none;
+      padding: 0;
+      .itemLink{
+        font-weight: 500;
+        display: block;
+        color: #000;
+        text-transform: capitalize;
+        padding: 15px 10px;
+        text-decoration: none;
+        border-bottom: 1px solid #ddd;
+
+        &::before {
+          content: "\f061";
+          font-family: "FontAwesome";
+          margin-right: 5px;
+        }
+      }
+    }
+    .accordion-body{
+      margin-left: 10px;
+      background: #f5f5f5;
+    }
+
+
+  }
+  .accordion-button {
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 15px 30px 15px 10px;
+    display: block;
+    border-bottom: 1px solid #ddd;
+    position: relative;
+    font-family: "Inter", sans-serif;
+    border-radius: 0 !important;
+    background-color: #fff;
+    &::after {
+      position: absolute;
+      right: 5px;
+      top: 15px;
+    }
+    &:focus{
+      box-shadow: none;
+    }
+  }
+  .accordion-item {
+    border: none;
+    border-radius: 0;
+  }
+  .accordion-button:not(.collapsed){
+    background-color: transparent;
+  }
+}
