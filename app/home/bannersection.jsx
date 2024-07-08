@@ -4,8 +4,8 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import bannerImage1 from './../../public/assets/Images/homepage/bannerInner1.png'
-import bannerImage2 from '../../../assets/Images/homepage/bannerInner2.jpg';
-import bannerImage3 from '../../../assets/Images/homepage/bannerInner3.jpg';
+import bannerImage2 from './../../public/assets/Images/homepage/bannerInner2.jpg';
+import bannerImage3 from './../../public/assets/Images/homepage/bannerInner3.jpg';
 import {scrollTop} from './../../common/utils'
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet';

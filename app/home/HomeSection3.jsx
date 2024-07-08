@@ -1,7 +1,7 @@
-import serviceIcon1 from '../../../assets/Images/homepage/Digitalmarketing.svg'
-import serviceIcon2 from '../../../assets/Images/homepage/MarketingStrategies.svg'
-import serviceIcon3 from '../../../assets/Images/homepage/StrongRelations.svg'
-import serviceIcon4 from '../../../assets/Images/homepage/SustainandGrow.svg'
+import serviceIcon1 from './../../public/assets/Images/homepage/Digitalmarketing.svg'
+import serviceIcon2 from './../../public/assets/Images/homepage/MarketingStrategies.svg'
+import serviceIcon3 from './../../public/assets/Images/homepage/StrongRelations.svg'
+import serviceIcon4 from './../../public/assets/Images/homepage/SustainandGrow.svg'
 import Image from 'next/image'
 
 const HomeSection2 = () => {
