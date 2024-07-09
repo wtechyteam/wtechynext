@@ -14,6 +14,8 @@ const HeaderNavbar = () => {
   const [activeLink, setActiveLink] = useState();
   const [isClient, setIsClient] = useState(false);
 
+  const router = useRouter();
+
   useEffect(() => {
     setIsClient(true);
   }, []);
@@ -21,8 +23,6 @@ const HeaderNavbar = () => {
   if (!isClient) {
     return null;
   }
-
-  const router = useRouter();
 
   const handleNavLinkClick = () => {
     window.scrollTo(0, 0);
@@ -48,8 +48,10 @@ const HeaderNavbar = () => {
 
   return (
     <Navbar expand="xl">
-      <Link href='/' passHref>
-        <Image src={headerLogo} width={100} alt="Site Logo" />
+      <Link href='/' passHref legacyBehavior>
+        <a>
+          <Image src={headerLogo} width={100} alt="Site Logo" />
+        </a>
       </Link>
       <Navbar.Toggle onClick={toggleOffCanvas} aria-controls="offcanvasNavbar-expand-xl" />
       <Navbar.Offcanvas
@@ -71,14 +73,14 @@ const HeaderNavbar = () => {
                   onMouseEnter={() => handleParentNavHover(index)}
                   onMouseLeave={handleParentNavLeave}
                 >
-                  <Link href={navItem.link} passHref>
-                    <div
+                  <Link href={navItem.link} passHref legacyBehavior>
+                    <a
                       className={`navItem mb-0 ${navItem?.customClass} ${router.pathname === navItem.link ? 'active' : ''}`}
                       onClick={handleNavLinkClick}
                     >
                       {navItem.title}
                       {navItem.subMenu && <FiChevronDown className="fs-large" />}
-                    </div>
+                    </a>
                   </Link>
                   {navItem.subMenu && activeLink === index && (
                     <div className="megaMenuWrapper">
@@ -88,10 +90,10 @@ const HeaderNavbar = () => {
                           <ul>
                             {subMenu.subLinks.map((item) => (
                               <li key={item.id}>
-                                <Link href={item.link} passHref>
-                                  <div className="itemLink" onClick={handleNavLinkClick}>
+                                <Link href={item.link} passHref legacyBehavior>
+                                  <a className="itemLink" onClick={handleNavLinkClick}>
                                     {item.title}
-                                  </div>
+                                  </a>
                                 </Link>
                               </li>
                             ))}
@@ -122,8 +124,8 @@ const HeaderNavbar = () => {
                                       <ul>
                                         {ele.subLinks && ele.subLinks.map((subItem, subItemIndex) => (
                                           <li key={subItemIndex}>
-                                            <Link href={subItem.link} passHref>
-                                              <div onClick={executeMultipleFunctions} className='itemLink'>{subItem.title}</div>
+                                            <Link href={subItem.link} passHref legacyBehavior>
+                                              <a onClick={executeMultipleFunctions} className='itemLink'>{subItem.title}</a>
                                             </Link>
                                           </li>
                                         ))}
@@ -136,8 +138,8 @@ const HeaderNavbar = () => {
                           </Accordion.Item>
                         </Accordion>
                       ) : (
-                        <Link href={item.link} passHref>
-                          <div onClick={executeMultipleFunctions} className='navItem'>{item.title}</div>
+                        <Link href={item.link} passHref legacyBehavior>
+                          <a onClick={executeMultipleFunctions} className='navItem'>{item.title}</a>
                         </Link>
                       )
                     }
