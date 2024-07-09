@@ -17,13 +17,13 @@ const Header = ({ activeTab, setActiveTab, currentPath, setCurrentPath }) => {
 
 
     return (
-        <> <BrowserRouter>
+        <> 
             <header className={`headerMain ${isScrolled ? 'sticky' : ''}`}>
                 <div className='container'>
                     <HeaderNavbar activeTab={activeTab} setActiveTab={setActiveTab} />
                 </div>
             </header>
-            </BrowserRouter>
+            
         </>
     );
 };
