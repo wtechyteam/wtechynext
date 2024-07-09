@@ -1,5 +1,6 @@
 import React from 'react';
 import ContactUsButton from './ContactUsButton';
+import Image from 'next/image';
 
 const ImageInfoWrap = ({ title, description, imageUrl, isReverse, showContactBtn, customClass }) => {
     return (
@@ -8,7 +9,7 @@ const ImageInfoWrap = ({ title, description, imageUrl, isReverse, showContactBtn
                 <div className={`row align-items-center ${isReverse && 'flex-row-reverse'}`}>
                     <div className="col-md-6 mb-5 mb-md-0 text-center">
                         <div className=''>
-                            <img className='content_side_image img-fluid' src={imageUrl} title={title} alt='side-img' />
+                            <Image className='content_side_image img-fluid' src={imageUrl} title={title} alt='side-img' />
                         </div>
                     </div>
                     <div className="col-md-6">

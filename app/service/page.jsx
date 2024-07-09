@@ -37,7 +37,7 @@ const Services = () => {
                                     <div className="cardInfo">
                                         <h2 className="cardTitle title-md fw-bold text-capitalize">{service.title}</h2>
                                         <p className='cardDescription text-sm mb-4'>{service.description}</p>
-                                        <Link href={`/service/${service.slug}`} legacyBehavior>
+                                        <Link href={`/${service.slug}`} legacyBehavior>
                                             <a className='dBtn btnText' onClick={scrollTop}>Read More<FiChevronsRight /></a>
                                         </Link>
                                     </div>
