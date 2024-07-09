@@ -3,12 +3,12 @@ import InnerBanner from '../../common/InnerBanner';
 import React, { useEffect, useRef } from 'react';
 //import { useSelector, useDispatch } from 'react-redux';
 //import { fetchCareers } from '../../redux/actions/careersActions';
-import { Link } from 'react-router-dom';
-import { scrollTop } from './../../common/utils'
+//import { Link } from 'react-router-dom';
+//import { scrollTop } from './../../common/utils'
 import section1Image from './../../public/assets/Images/career/carrerSection1.jpg'
-import { IoLocationOutline } from "react-icons/io5";
-import { PiBagSimple } from "react-icons/pi";
-import { GoClock } from "react-icons/go";
+//import { IoLocationOutline } from "react-icons/io5";
+//import { PiBagSimple } from "react-icons/pi";
+//import { GoClock } from "react-icons/go";
 import Image from 'next/image';
 import careerImage from './../../public/assets/Images/career/careerpage.png'
 // import { Helmet } from 'react-helmet';
