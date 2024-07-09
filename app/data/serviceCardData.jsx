@@ -1,10 +1,11 @@
-import serviceIcon1 from '../../assets/Images/homepage/digitalMarketing.png'
-import serviceIcon2 from '../../assets/Images/homepage/MarketingStrategies.png'
-import serviceIcon3 from '../../assets/Images/services/Shopify-Development-icon-cropped.svg'
+
+import serviceIcon1 from './../../public/assets/Images/homepage/digitalMarketing.png'
+import serviceIcon2 from './../../public/assets/Images/homepage/MarketingStrategies.png'
+import serviceIcon3 from './../../public/assets/Images/services/Shopify-Development-icon-cropped.svg'
 // import serviceIcon4 from './../assets/Images/services/WordPress-Web-Design-icon.svg'
-import serviceIcon5 from '../../assets/Images/services/YouTube-Advertising-icon-cropped.svg'
-import serviceIcon6 from '../../assets/Images/services/LinkedIn-Advertising-icon-cropped.svg'
-import serviceIcon7 from '../../assets/Images/services/Link-Building-icon-cropped.svg'
+import serviceIcon5 from './../../public/assets/Images/services/YouTube-Advertising-icon-cropped.svg'
+import serviceIcon6 from './../../public/assets/Images/services/LinkedIn-Advertising-icon-cropped.svg'
+import serviceIcon7 from './../../public/assets/Images/services/Link-Building-icon-cropped.svg'
 
 export const serviceData = [
     {
