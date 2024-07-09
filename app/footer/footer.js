@@ -1,8 +1,6 @@
-"use client"
+"use client";
 import "./footerStyle.scss";
-import Logo from "./../../common/SiteLogo";
 import footerLogo from "./../../public/assets/Images/wtechy-logo-white.webp";
-import { BrowserRouter, NavLink } from "react-router-dom";
 import SocialLinks from "./../../common/SocialLinks";
 import Image from "next/image";
 import Link from "next/link";
@@ -69,7 +67,6 @@ const Footer = () => {
   ];
 
   return (
-    <BrowserRouter>
     <footer className="siteFooter">
       <div className="footerTopWrap">
         <div className="container">
@@ -89,32 +86,23 @@ const Footer = () => {
               <ul className="footerList linkList">
                 {topLinks.map((list, index) => (
                   <li className={`serviceWrap`} key={index}>
-                    <NavLink
-                      onClick={() => handleNavLinkClick()}
-                      to={list.link}
-                    >
-                      {list.title}
-                    </NavLink>
+                    <Link href={list.link} legacyBehavior>
+                      <a onClick={handleNavLinkClick}>{list.title}</a>
+                    </Link>
                   </li>
                 ))}
-                {/* <li><a href='/locations'>location</a></li> */}
               </ul>
             </div>
             <div className="col-lg-3 col-md-6">
               <h2 className="title-sm fw-bold mb-4">Services</h2>
               <ul className="footerList linkList">
-                <BrowserRouter>
-                  {serviceLinks.map((list, index) => (
-                    <li className="serviceWrap" key={index}>
-                      <NavLink
-                        onClick={() => handleNavLinkClick()}
-                        to={list.link}
-                      >
-                        {list.title}
-                      </NavLink>
-                    </li>
-                  ))}
-                </BrowserRouter>
+                {serviceLinks.map((list, index) => (
+                  <li className="serviceWrap" key={index}>
+                    <Link href={list.link} legacyBehavior>
+                      <a onClick={handleNavLinkClick}>{list.title}</a>
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </div>
             <div className="col-lg-3 col-md-6">
@@ -154,7 +142,6 @@ const Footer = () => {
         <p className="mb-0">Copyright © 2024 Wtechy. All rights reserved.</p>
       </div>
     </footer>
-    </BrowserRouter>
   );
 };
 
