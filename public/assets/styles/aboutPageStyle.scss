@@ -2,15 +2,15 @@
 .teamList {
   .teamImage {
     width: 100%;
-    padding-top: calc(100% /(16/12));
+    //padding-top: calc(100% /(16/12));
     background: #ddd;
     position: relative;
     display: block;
     margin-top: 80px;
-    img {
+    Image {
       position: absolute;
       width: auto;
-      height: calc(100% + 80px);
+      height: calc(100% + 8000px);
       object-fit: contain;
       left: 50%;
       transform: translateX(-50%);
