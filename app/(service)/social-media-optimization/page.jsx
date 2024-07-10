@@ -1,19 +1,25 @@
+'use client'
 import React from 'react'
-import InnerBanner from './../../common/InnerBanner'
-import ImageInfoWrap from './../../common/ImageInfoWrap';
-import section1Image from './../../public/assets/Images/services/smo.jpg';
-import section2Image from './../../public/assets/Images/services/smo-1.png';
-import section3Image from './../../public/assets/Images/services/smo-2.jpg';
-import section4Image from './../../public/assets/Images/services/smo-3.png';
+import InnerBanner from '../../../common/InnerBanner'
+import ImageInfoWrap from '../../../common/ImageInfoWrap';
+import section1Image from './../../../public/assets/Images/services/smo.jpg';
+import section2Image from './../../../public/assets/Images/services/smo-1.png';
+import section3Image from './../../../public/assets/Images/services/smo-2.jpg';
+import section4Image from './../../../public/assets/Images/services/smo-3.png';
 
 
-import SectionTopInfo from './../../common/SectionTopInfo';
-import FullWidthCTASection from './../../common/FullWidthCTASection';
-import FAQs from './../../common/FAQs';
+import SectionTopInfo from '../../../common/SectionTopInfo';
+import FullWidthCTASection from '../../../common/FullWidthCTASection';
+import FAQs from '../../../common/FAQs';
+import { BrowserRouter } from 'react-router-dom';
+
+import { useMounted } from '../../../common/unmounted';
 
 
 
 const SocialMediaOpt = () => {
+  const mounted = useMounted();
+  if(!mounted) return null;
 
   const faqData = [
     {
@@ -32,6 +38,7 @@ const SocialMediaOpt = () => {
   ];
 
   return (
+    <BrowserRouter>
     <div>
        
       <InnerBanner title={"Social Media Optimization"}
@@ -90,6 +97,7 @@ const SocialMediaOpt = () => {
         </div>
       </section>
     </div>
+    </BrowserRouter>
   )
 }
 

@@ -46,22 +46,22 @@ const Footer = () => {
     {
       id: 1,
       title: "Search Engine Optimization",
-      link: "service/search-engine-optimization", // Correctly set the home page route
+      link: "/search-engine-optimization", // Correctly set the home page route
     },
     {
       id: 2,
       title: "Social Media Optimization",
-      link: "service/social-media-optimization",
+      link: "/social-media-optimization",
     },
     {
       id: 3,
       title: "Google Ads Management",
-      link: "service/google-ads-management",
+      link: "/google-ads-management",
     },
     {
       id: 4,
       title: "Content Marketing",
-      link: "service/content-marketing",
+      link: "/content-marketing",
     },
     // Add more service sections as needed
   ];

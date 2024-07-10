@@ -28,22 +28,22 @@ export const headerData = [
                     {
                         id: 1,
                         title: "search engine optimization",
-                        link: "service/search-engine-optimization"
+                        link: "/search-engine-optimization"
                     },
                     {
                         id: 2,
                         title: "social media optimization",
-                        link: "service/social-media-optimization"
+                        link: "/social-media-optimization"
                     },
                     {
                         id: 3,
                         title: "google ads management",
-                        link: "service/google-ads-management"
+                        link: "/google-ads-management"
                     },
                     {
                         id: 4,
                         title: "content marketing",
-                        link: "service/content-marketing"
+                        link: "/content-marketing"
                     }
                 ]
             },
@@ -54,22 +54,22 @@ export const headerData = [
                     {
                         id: 7,
                         title: "Amazon Store Management",
-                        link: "service/amazon-store-management"
+                        link: "/amazon-store-management"
                     },
                     {
                         id: 8,
                         title: "Ebay Store Management",
-                        link: "service/ebay-store-management"
+                        link: "/ebay-store-management"
                     },
                     {
                         id: 9,
                         title: "Shopify Store Management",
-                        link: "service/shopify-store-management"
+                        link: "/shopify-store-management"
                     },
                     {
                         id: 10,
                         title: "Custom E-Commerce Store Management",
-                        link: "service/custom-e-commerce-store-management-2"
+                        link: "/custom-e-commerce-store-management-2"
                     },
                 ]
             },
@@ -79,12 +79,12 @@ export const headerData = [
                     {
                         id: 5,
                         title: "Corporate",
-                        link: "service/repair-online-reputation-corporate"
+                        link: "/repair-online-reputation-corporate"
                     },
                     {
                         id: 6,
                         title: "Personal",
-                        link: "service/repair-online-reputation-personal"
+                        link: "/repair-online-reputation-personal"
                     },
                 ]
             },
@@ -95,13 +95,13 @@ export const headerData = [
                         id: 11,
                         key:true,
                         title: "Corporate",
-                        link: "service/online-reputation-marketing-corporate"
+                        link: "/online-reputation-marketing-corporate"
                     },
                     {
                         id: 12,
                         key:true,
                         title: "Personal",
-                        link: "service/online-reputation-marketing-personal"
+                        link: "/online-reputation-marketing-personal"
                     },
                 ]
 
@@ -113,13 +113,13 @@ export const headerData = [
                         id: 13,
                         key:true,
                         title: "WordPress Development",
-                        link: "service/wordpress-development"
+                        link: "/wordpress-development"
                     },
                     {
                         id: 14,
                         key:true,
                         title: "Shopify Development",
-                        link: "service/shopify-development"
+                        link: "/shopify-development"
                     },
                 ]
 

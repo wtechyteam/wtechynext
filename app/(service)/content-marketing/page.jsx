@@ -1,18 +1,22 @@
 'use client'
-import InnerBanner from './../../common/InnerBanner';
-import ImageInfoWrap from './../../common/ImageInfoWrap';
-import section1Image from './../../public/assets/Images/services/SEO.webp';
-import section2Image from './../../public/assets/Images/services/what-we-do-service.png';
-import serviceIcon1 from './../../public/assets/Images/homepage/digitalMarketing.png'
-import serviceIcon2 from './../../public/assets/Images/homepage/MarketingStrategies.png'
-import SectionTopInfo from './../../common/SectionTopInfo';
-import FullWidthCTASection from './../../common/FullWidthCTASection';
-import FAQs from './../../common/FAQs';
+import InnerBanner from '../../../common/InnerBanner';
+import ImageInfoWrap from '../../../common/ImageInfoWrap';
+import section1Image from './../../../public/assets/Images/services/SEO.webp';
+import section2Image from './../../../public/assets/Images/services/what-we-do-service.png';
+import serviceIcon1 from './../../../public/assets/Images/homepage/digitalMarketing.png'
+import serviceIcon2 from './../../../public/assets/Images/homepage/MarketingStrategies.png'
+import SectionTopInfo from '../../../common/SectionTopInfo';
+import FullWidthCTASection from '../../../common/FullWidthCTASection';
+import FAQs from '../../../common/FAQs';
 import { FaArrowRight } from "react-icons/fa6";
 import Image from 'next/image';
 import { BrowserRouter } from 'react-router-dom';
+import { useMounted } from '../../../common/unmounted';
 
 const ContentMarketing = () => {
+
+  const mounted = useMounted();
+  if(!mounted) return null;
 
   const contentCardData = [
     {
