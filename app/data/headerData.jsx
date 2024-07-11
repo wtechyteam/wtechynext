@@ -69,7 +69,7 @@ export const headerData = [
                     {
                         id: 10,
                         title: "Custom E-Commerce Store Management",
-                        link: "/custom-e-commerce-store-management-2"
+                        link: "/custom-e-commerce-store-management"
                     },
                 ]
             },
