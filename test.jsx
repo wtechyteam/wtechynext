@@ -1,4 +1,4 @@
-
+require("dotenv").config();
 import SectionTopInfo from "./../../common/SectionTopInfo";
 import InnerBanner from "./../../common/InnerBanner";
 import { FiChevronsRight } from "react-icons/fi";
@@ -13,7 +13,7 @@ import Image from "next/image";
 
 process.env.BASE_URL = "https://cdn.contentful.com";
 process.env.SPACE_ID = "czxhot8e1lwm";
-process.env.ACCESS_TOKEN = "MwXuZYffZoItH2QbGKvSZczMVhnxI-X15VQ4trtVZMU";
+process.env.ACCESS_TOKEN = "ZyXIJCKIB-ykyM80vla3zf_3bMdCmW8JnI0t_ghlTXc";
 
 
 const url = `${process.env.BASE_URL}/spaces/${process.env.SPACE_ID}/environments/master/entries?access_token=${process.env.ACCESS_TOKEN}`;
@@ -63,9 +63,9 @@ export default async function Insights() {
                   alt={item.fields.titleInsights}
                 />
               )}  
-              <h5 className="card-title">{item.fields.title}</h5>
+              <h5 className="card-title">{item.fields.titleInsights}</h5>
               <p className="card-text">
-                {item.fields.description}
+                {item.fields.shortDescriptionInsights}
               </p>
               <a href="#" className="btn btn-primary">
                 Go somewhere
