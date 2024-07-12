@@ -15,13 +15,16 @@ process.env.BASE_URL = "https://cdn.contentful.com";
 process.env.SPACE_ID = "czxhot8e1lwm";
 process.env.ACCESS_TOKEN = "MwXuZYffZoItH2QbGKvSZczMVhnxI-X15VQ4trtVZMU";
 
+console.log(process.env.NEXT_LOCAL_BASE_URL);
+console.log(process.env.SPACE_ID);
+console.log(process.env.ACCESS_TOKEN);
 
 const url = `${process.env.BASE_URL}/spaces/${process.env.SPACE_ID}/environments/master/entries?access_token=${process.env.ACCESS_TOKEN}`;
-console.log(url);
+// console.log(url);
 export default async function Insights() {
   const response = await fetch(url);
   const data = await response.json();
-  console.log(process.env.NEXT_PUBLIC_BASE_URL);
+  console.log(process.env.NEXT_LOCAL_BASE_URL);
 
   return (
     <>

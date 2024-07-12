@@ -11,14 +11,15 @@ import testimonial6 from "./../../public/assets/Images/homepage/testimonial6.png
 
 import Image from 'next/image';
 import { BrowserRouter } from 'react-router-dom';
-
+import {useMounted} from "./../../common/unmounted"
 
 
 
 
 const HomeSection7 = () => {
 
-
+    const mounted = useMounted();
+    if(!mounted) return null;
     const testimonialData = [
         {
 

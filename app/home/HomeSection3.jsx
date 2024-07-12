@@ -4,12 +4,13 @@ import serviceIcon1 from './../../public/assets/Images/homepage/Digitalmarketing
 import serviceIcon2 from './../../public/assets/Images/homepage/MarketingStrategies.svg'
 import serviceIcon3 from './../../public/assets/Images/homepage/StrongRelations.svg'
 import serviceIcon4 from './../../public/assets/Images/homepage/SustainandGrow.svg'
-
+import {useMounted} from "./../../common/unmounted"
 import Image from 'next/image'
 
 const HomeSection3 = () => {
 
-
+    const mounted = useMounted();
+    if(!mounted) return null;
 
     const serviceData = [
         {

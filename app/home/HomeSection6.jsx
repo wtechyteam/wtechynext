@@ -5,10 +5,13 @@ import { scrollTop } from '../../common/utils'
 //import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 //import { fetchInsights } from '../../../redux/actions/insightsAction';
+import {useMounted} from "./../../common/unmounted"
 
 
 
 const HomeSection6 = () => {
+    const mounted = useMounted();
+    if(!mounted) return null;
 
     //const { insights } = useSelector((state) => state.insightsApi);
     //const dispatch = useDispatch();

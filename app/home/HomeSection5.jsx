@@ -5,7 +5,8 @@ import serviceIcon2 from './../../public/assets/Images/homepage/MarketingStrateg
 import serviceIcon1 from './../../public/assets/Images/homepage/digitalMarketing.png'
 import { BrowserRouter, Router, useNavigate } from 'react-router-dom'
 import Image from 'next/image'
-import { useMounted } from "../../common/unmounted";
+
+import {useMounted} from "./../../common/unmounted"
 
 
 const HomeSection5 = () => {
@@ -15,6 +16,11 @@ const HomeSection5 = () => {
         navigate(`${service.path}`)
         window.scroll(0, 0)
     } */
+
+    const mounted = useMounted();
+    if(!mounted) return null;
+
+
 
     const serviceData = [
         {

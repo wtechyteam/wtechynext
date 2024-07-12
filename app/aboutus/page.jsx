@@ -1,4 +1,4 @@
-"use client";
+'use client'
 import { useState } from "react";
 import "./../../public/assets/styles/aboutPageStyle.scss";
 import InnerBanner from "./../../common/InnerBanner";
@@ -7,7 +7,6 @@ import Image from "next/image";
 
 import serviceIcon1 from "./../../public/assets/Images/homepage/digitalMarketing.png";
 import serviceIcon2 from "./../../public/assets/Images/homepage/MarketingStrategies.png";
-import { Helmet } from "react-helmet";
 
 //import teamImage1 from './../assets/Images/homepage/cosnsult-image.png'
 import Slider from "react-slick";
@@ -24,6 +23,8 @@ import r from "./../../public/assets/Images/homepage/team/r.png";
 import n from "./../../public/assets/Images/homepage/team/n.png";
 import y from "./../../public/assets/Images/homepage/team/y.png";
 import kg from "./../../public/assets/Images/homepage/team/kg.png";
+
+
 
 const serviceData = [
   {
@@ -179,6 +180,8 @@ const teamsData = [
 ];
 
 const AboutUs = () => {
+
+  
   const testimonialSliderSettings = {
     dots: false,
     infinite: true,
@@ -213,13 +216,12 @@ const AboutUs = () => {
 
   return (
     <>
-      <Helmet>
-        <meta name="title" content="WTechy - Digital Marketing Agency" />
-        <meta
-          name="description"
-          content="Specialize in tech-enabled digital marketing solutions designed for specific needs & goals. Our team crafts strategies that drive results in digital landscape."
-        />
-      </Helmet>
+     <head>
+        <meta title="About WTechy - Growth Focused Digital Marketing Agency"/>
+        <meta name="description"
+        content="Unleash your brand's potential. We're a results-driven digital marketing agency crafting custom strategies for SEO, PPC & social media. Let's grow together! "/>
+      </head>
+<section>
       <InnerBanner
         title={"About Us"}
         info={
@@ -373,8 +375,10 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+      </section>
     </>
   );
 };
 
 export default AboutUs;
+

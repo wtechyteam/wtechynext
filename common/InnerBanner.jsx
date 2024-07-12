@@ -2,6 +2,8 @@ import React from 'react';
 
 
 const InnerBanner = ({title,info}) => {
+  
+
   return (
       <section className='innerBanner text-center'>
         <div className="container position-relative">

@@ -6,7 +6,11 @@ const ContactUS = () => {
 
     return (
         <>
-            
+            <head>
+        <meta title="Get in Touch with WTechy: Your Partner in Digital Growth"/>
+        <meta name="description"
+        content="Facing digital challenges? Reach out to WTechy, your partner in digital growth. We're here to tackle your challenges and offer solutions. Connect with us now!"/>
+      </head>
             <InnerBanner
                 title={'Contact Us'}
                 info={"Got a question or feedback? We're here for you! Reach out to the Wtechy team anytime and let us know how we can assist you. Get in touch today! "}

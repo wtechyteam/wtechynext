@@ -12,6 +12,11 @@ import Footer from "./footer/footer";
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <meta title="WTechy: Digital Marketing Agency | Grow Your Brand Online"/>
+        <meta name="description"
+        content="Boost your business with WTechy's expert digital marketing services. From SEO to social media, we help you reach your target audience and drive growth. Visit now!"/>
+      </head>
       <body>
         <HeaderNavbar/>
         {children}
@@ -20,3 +25,12 @@ export default function RootLayout({ children }) {
     </html>
   );
 }
+
+
+// export function generateMetaData(){
+//   return{
+//       title: "WTechy: Digital Marketing Agency | Grow Your Brand Online ",
+//       description: "Boost your business with WTechy's expert digital marketing services. From SEO to social media, we help you reach your target audience and drive growth. Visit now!"
+//   }
+// }
+

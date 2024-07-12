@@ -1,9 +1,12 @@
 'use client'
 import React from 'react';
 import ContactUsButton from './ContactUsButton';
+import {useMounted} from "./../common/unmounted"
 
 
 const SectionTopInfo = ({ smallTitle, title, text, isCenter, isFullWidth, showContactBtn, description }) => {
+  const mounted = useMounted();
+  if(!mounted) return null;
 
   const alignmentClass = isCenter ? 'text-center mx-auto' : '';
 

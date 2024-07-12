@@ -4,10 +4,13 @@ import { scrollTop } from '../../common/utils'
 //import ctaImage from '../../../assets/Images/homepage/man.png'
 import { BrowserRouter } from 'react-router-dom';
 import Image from 'next/image';
+import {useMounted} from "./../../common/unmounted"
 
 
 const HomeSection4 = () => {
 
+    const mounted = useMounted();
+    if(!mounted) return null;
 
     return (
         <BrowserRouter>
