@@ -1,30 +1,22 @@
-
 import SectionTopInfo from "./../../common/SectionTopInfo";
 import InnerBanner from "./../../common/InnerBanner";
 import { FiChevronsRight } from "react-icons/fi";
 import { Container } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 import { scrollTop } from "./../../common/utils";
 import { FiClock } from "react-icons/fi";
 import LoadingSection from "./../../common/loadingSection";
 
 import Image from "next/image";
+import { fetchEntries } from './../contentful';
 
-process.env.BASE_URL = "https://cdn.contentful.com";
-process.env.SPACE_ID = "czxhot8e1lwm";
-process.env.ACCESS_TOKEN = "MwXuZYffZoItH2QbGKvSZczMVhnxI-X15VQ4trtVZMU";
+export const revalidate = 60; // Revalidate at most once every 60 seconds
 
-console.log(process.env.NEXT_LOCAL_BASE_URL);
-console.log(process.env.SPACE_ID);
-console.log(process.env.ACCESS_TOKEN);
-
-const url = `${process.env.BASE_URL}/spaces/${process.env.SPACE_ID}/environments/master/entries?access_token=${process.env.ACCESS_TOKEN}`;
-// console.log(url);
 export default async function Insights() {
-  const response = await fetch(url);
-  const data = await response.json();
-  console.log(process.env.NEXT_LOCAL_BASE_URL);
+  const data = await fetchEntries();
+  const items = data.items || [];
+  const assets = data.includes?.Asset || [];
 
   return (
     <>
@@ -46,40 +38,38 @@ export default async function Insights() {
           />
         </Container>
       </section>
-     <div className="container">
-  <div className="row">
-    {data.items.map((item, index) => {
-      const imageId = item.fields.image?.sys?.id;
-      const image = imageId ? data.includes.Asset.find(
-        (asset) => asset.sys.id === imageId
-      ) : null;
-      const imageUrl = image?.fields?.file?.url;
+      <div className="container">
+        <div className="row">
+          {items.map((item, index) => {
+            const imageId = item.fields.image?.sys?.id;
+            const image = imageId ? assets.find(
+              (asset) => asset.sys.id === imageId
+            ) : null;
+            const imageUrl = image?.fields?.file?.url;
 
-      return (
-        <div className="col-md-4" key={index}>
-          <div className="card" style={{ width: "18rem" }}>
-            <div className="card-body">
-              {imageUrl && (
-                <img
-                  src={imageUrl}
-                  className="card-img-top"
-                  alt={item.fields.titleInsights}
-                />
-              )}  
-              <h5 className="card-title">{item.fields.title}</h5>
-              <p className="card-text">
-                {item.fields.description}
-              </p>
-              <a href="#" className="btn btn-primary">
-                Go somewhere
-              </a>
-            </div>
-          </div>
+            return (
+              <div className="col-md-4" key={index}>
+                <div className="card" style={{ width: "18rem" }}>
+                  <div className="card-body">
+                    {imageUrl && (
+                      <img
+                        src={imageUrl}
+                        className="card-img-top"
+                        alt={item.fields.titleInsights}
+                      />
+                    )}
+                    <h5 className="card-title">{item.fields.title}</h5>
+                    <p className="card-text">
+                      {item.fields.description}
+                    </p>
+                    <Link href={`/insights/${item.fields.title}`} className="btn btn-primary">Go</Link>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
         </div>
-      );
-    })}
-  </div>
-</div>
+      </div>
     </>
   );
 }
