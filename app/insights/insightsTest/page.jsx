@@ -1,3 +1,5 @@
+//It was just a test , we don't need this now
+
 import { notFound } from 'next/navigation';
 import ClientPage from './ClientPage';
 

@@ -62,7 +62,7 @@ export default async function Insights() {
                     <p className="card-text">
                       {item.fields.description}
                     </p>
-                    <Link href={`/insights/${item.fields.title}`} className="btn btn-primary">Go</Link>
+                    <Link href={`/insights/${item.fields.slug}`} className="btn btn-primary">Go</Link>
                   </div>
                 </div>
               </div>
