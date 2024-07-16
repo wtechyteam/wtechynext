@@ -9,12 +9,13 @@ import { FiClock } from "react-icons/fi";
 import LoadingSection from "./../../common/loadingSection";
 
 import Image from "next/image";
-import { fetchEntries } from './../contentful';
+import { fetchEntries } from "./../contentful";
 
 export const revalidate = 60; // Revalidate at most once every 60 seconds
 
 export default async function Insights() {
-  const data = await fetchEntries();
+  const contentType = 'componentDuplex'; 
+  const data = await fetchEntries(contentType);
   const items = data.items || [];
   const assets = data.includes?.Asset || [];
 
@@ -41,10 +42,11 @@ export default async function Insights() {
       <div className="container">
         <div className="row">
           {items.map((item, index) => {
+             
             const imageId = item.fields.image?.sys?.id;
-            const image = imageId ? assets.find(
-              (asset) => asset.sys.id === imageId
-            ) : null;
+            const image = imageId
+              ? assets.find((asset) => asset.sys.id === imageId)
+              : null;
             const imageUrl = image?.fields?.file?.url;
 
             return (
@@ -52,17 +54,21 @@ export default async function Insights() {
                 <div className="card" style={{ width: "18rem" }}>
                   <div className="card-body">
                     {imageUrl && (
-                      <img
-                        src={imageUrl}
-                        className="card-img-top"
+                      <Image
+                        src={`https:${imageUrl}`}
                         alt={item.fields.titleInsights}
+                        width={300}
+                        height={200}
                       />
                     )}
                     <h5 className="card-title">{item.fields.title}</h5>
-                    <p className="card-text">
-                      {item.fields.description}
-                    </p>
-                    <Link href={`/insights/${item.fields.slug}`} className="btn btn-primary">Go</Link>
+                    <p className="card-text">{item.fields.description}</p>
+                    <Link
+                      href={`/insights/${item.fields.slug}`}
+                      className="btn btn-primary"
+                    >
+                      Go
+                    </Link>
                   </div>
                 </div>
               </div>

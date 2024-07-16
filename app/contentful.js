@@ -5,9 +5,12 @@ const client = createClient({
   accessToken: 'MwXuZYffZoItH2QbGKvSZczMVhnxI-X15VQ4trtVZMU'
 });
 
-export async function fetchEntries() {
-    const entries = await client.getEntries({ include: 1 });
-    if (entries.items) return entries;
-    console.log(`Error getting Entries.`);
-    return { items: [], includes: { Asset: [] } };
-  }
+export async function fetchEntries(contentType) {
+  const entries = await client.getEntries({ 
+    content_type: contentType, // Specify your content model ID here
+    include: 1 
+  });
+  if (entries.items) return entries;
+  console.log(`Error getting Entries.`);
+  return { items: [], includes: { Asset: [] } };
+}
