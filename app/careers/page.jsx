@@ -1,12 +1,15 @@
 import InnerBanner from "../../common/InnerBanner";
 
-//import { scrollTop } from './../../common/utils'
+import { scrollTop } from '../../common/utils'
 import section1Image from "./../../public/assets/Images/career/carrerSection1.jpg";
 
 import Image from "next/image";
 import careerImage from "./../../public/assets/Images/career/careerpage.png";
 import Link from "next/link";
 import { fetchEntries } from "./../contentful";
+import { IoLocationOutline } from "react-icons/io5";
+import { PiBagSimple } from "react-icons/pi";
+import { GoClock } from "react-icons/go";
 
 const LifeAtWTechy = () => {
   const feathers = [
@@ -57,7 +60,7 @@ const LifeAtWTechy = () => {
 };
 
 export default async function Careers() {
-    const contentType = 'careers'; 
+  const contentType = "careers";
   const data = await fetchEntries(contentType);
   const items = data.items || [];
   //const assets = data.includes?.Asset || [];
@@ -146,9 +149,33 @@ export default async function Careers() {
             Are you ready to{" "}
             <span className="color-secondary">Join Our Team ?</span>
           </h2>
+          <ul className="jobList">
+            {items.map((item, index) => (
+              <li className="jobWrap" key={item.id}>
+                <Link href={`/careers/`} onClick={scrollTop} to={item.slug} className='content'>
+                <h2 className="title-md"> {item.fields.jobPost}</h2>
+                <p>
+                  <IoLocationOutline />
+                  {item.fields.location}
+                </p>
+                <ul>
+                  <li>
+                    <PiBagSimple />
+                    {item.fields.jobType}
+                  </li>
+                  <li>
+                    <GoClock />
+                    {item.fields.jobShift}
+                  </li>
+                </ul>
+                {/* <button className='dBtn btnSmall btnSecondary mt-3'>See Details</button> */}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
-      <div className="container">
+      {/* <div className="container">
         <div className="row">
           {items.map((item, index) => {
              
@@ -170,22 +197,22 @@ export default async function Careers() {
                         height={200}
                       />
                     )} */}
-                    <h5 className="card-title">{item.fields.jobPost}</h5>
+      {/* <h5 className="card-title">{item.fields.jobPost}</h5>
                     <p className="card-text">{item.fields.descr}</p>
                     <Link
-                      href={`/insights/${item.fields.slug}`}
+                      href={''}
                       className="btn btn-primary"
                     >
                       View Job
-                    </Link>
-                    
-                  </div>
+                    </Link> */}
+
+      {/* </div>
                 </div>
               </div>
             );
           })}
-        </div>
-      </div>
+        </div> */}
+      {/* </div> */}
       {/* <JobForm/> */}
     </>
   );

@@ -1,0 +1,8 @@
+async function getData(slug){
+  const posts = await dataClient.fetch()
+  return posts;
+}
+
+export default async function BlogPost({ params }) {
+  const post = await getData(params.insightsDescr);
+}

@@ -1,4 +1,5 @@
 // utils.js
+'use client'
 import {useMounted} from "./../common/unmounted"
 
 export const scrollTop = () => {
