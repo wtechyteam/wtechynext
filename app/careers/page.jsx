@@ -152,7 +152,7 @@ export default async function Careers() {
           <ul className="jobList">
             {items.map((item, index) => (
               <li className="jobWrap" key={item.id}>
-                <Link href={`/careers/`} onClick={scrollTop} to={item.slug} className='content'>
+                <Link href={`/careers/${item.fields.slug}`} onClick={scrollTop} to={item.slug} className='content'>
                 <h2 className="title-md"> {item.fields.jobPost}</h2>
                 <p>
                   <IoLocationOutline />

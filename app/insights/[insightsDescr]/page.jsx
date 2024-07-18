@@ -19,6 +19,18 @@ async function getInsightBySlug(slug) {
   return insight;
 }
 
+const options = {
+  renderNode: {
+    // Customize rendering for different node types as needed
+  },
+  renderMark: {
+    // Customize rendering for different mark types as needed
+  },
+  renderInline: {
+    // Customize rendering for different inline types as needed
+  }
+};
+
 export default async function InsightPage({ params }) {
   const { insightsDescr } = params;
   const insight = await getInsightBySlug(insightsDescr);
@@ -30,7 +42,7 @@ export default async function InsightPage({ params }) {
   return (
     <div>
       {/* ---------innerBanner------------- */}
-      <section className='innerBanner text-center'>
+      <section className='innerBanner text-center' >
         <div className="container position-relative">
           <div className="col-lg-7 mx-auto ">
             {insight && (
@@ -44,35 +56,76 @@ export default async function InsightPage({ params }) {
       </section>
       {/* ------------------------------------------ */}
 
-      <section className={`sectionPadding`}>
-        <div className='container'>
-          <div className={`row g-5`}>
-            <div className='col-lg-8'>
+      <section className={`sectionPadding`} >
+        <div style={styles.container}>
+          <div className={`row g-5`} style={styles.row}>
+            <div className='col-lg-8' style={styles.col}>
               {insight && (
                 <>
-                  <h2 className='title-xl fw-bold'>{insight.fields.title}</h2>
+                  <h2 style={styles.title} className='title-xl fw-bold'>{insight.fields.title}</h2>
                   {insight.imageUrl && (
                     <Image 
+                      style={styles.image}
                       src={`https:${insight.imageUrl}`} 
                       title={insight.fields.title} 
                       alt={insight.fields.title} 
                       layout="responsive"
-                      width={700} 
+                      width={300} 
                       height={475}
                     />
                   )}
-                  <div className='py-4'>{insight.fields.description}</div>
+                  <div style={styles.body} className='py-4'>
+                    {documentToReactComponents(insight.fields.body, options)}
+                  </div>
                 </>
               )}
             </div>
-            
           </div>
         </div>
       </section>
-
-      {/* <h1>{insight.fields.title}</h1>
-      <p>{insight.fields.description}</p> */}
-      {/* Add more fields as needed */}
     </div>
   );
 }
+
+const styles = {
+  page: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+ 
+  sectionPadding: {
+    padding: '50px 0',
+  },
+  container: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    padding: '0 20px',
+  },
+  row: {
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'center',
+  },
+  col: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+  },
+  title: {
+    textAlign: 'center',
+  },
+  image: {
+    maxWidth: '100%',
+    height: 'auto',
+  },
+  description: {
+    textAlign: 'center',
+  },
+  body: {
+    textAlign: 'left',
+    maxWidth: '800px',
+    width: '100%',
+  },
+};
