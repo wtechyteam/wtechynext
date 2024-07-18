@@ -52,7 +52,7 @@ export default async function CareersPage({ params }) {
             <div className="col-md-12">
               <div className="jobInfoWrap">
                 <div class="job-experience text-center">
-                  <h5 className="mb-0 f">{career.fields.experience}</h5>
+                  <h5 className="mb-0 f">{documentToReactComponents(career.fields.experience, options)}</h5>
                   <p className="mb-0">Experience</p>
                 </div>
                 <h2 className="job-title paddingLeft fw-bold">
@@ -63,7 +63,7 @@ export default async function CareersPage({ params }) {
                     <>
                       <h4>Job Description:</h4>
                       <div className="job-description">
-                        {career.fields.descr}
+                      {documentToReactComponents(career.fields.descr, options)}
                       </div>
                     </>
                   )}
@@ -71,7 +71,7 @@ export default async function CareersPage({ params }) {
                     <>
                       <h4>Job Responsibilities:</h4>
                       <div className="job-responsibilities">
-                        {career.fields.jobResponsibilities}
+                      {documentToReactComponents(career.fields.jobResponsibilities, options)}
                       </div>
                     </>
                   )}
@@ -87,7 +87,7 @@ export default async function CareersPage({ params }) {
                     <>
                       <p className="job-type">
                         <strong>Salary: </strong>
-                        {career.fields.jobSalary}
+                        {documentToReactComponents(career.fields.salary, options)}
                       </p>
                     </>
                   )}
