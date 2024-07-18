@@ -29,7 +29,12 @@ const WordpressDevelopment = () => {
   ];
   return (
     <div>
-      
+      <head>
+        <meta title="WordPress Website Development Services | Craft Your Website"/>
+        <meta
+          name="description"
+          content="Attract & Convert Leads with a Custom WordPress Website Development services. Our Digital Marketing Agency Builds SEO-Friendly Websites on WordPress."/>
+      </head>
       <InnerBanner
         title={"WordPress Development"}
         info={

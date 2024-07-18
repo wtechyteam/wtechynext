@@ -8,7 +8,7 @@ const ContactUS = () => {
         <meta title="Get in Touch with WTechy: Your Partner in Digital Growth" />
         <meta
           name="description"
-          content="Facing digital challenges? Reach out to WTechy, your partner in digital growth. We're here to tackle your challenges and offer solutions. Connect with us now!"
+          content="Facing digital challenges? Reach out to us, a full-service digital marketing agency. We're here to tackle your challenges and offer solutions for digital growth."
         />
       </head>
       <InnerBanner

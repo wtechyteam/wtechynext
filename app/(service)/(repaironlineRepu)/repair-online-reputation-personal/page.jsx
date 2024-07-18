@@ -38,7 +38,12 @@ const RepairPersonal = () => {
 
   return (
     <div>
-      
+      <head>
+        <meta title="Repair Personal Reputation: Enhance Your Online Image"/>
+        <meta
+          name="description"
+          content="Rebuild your trust online with our personal reputation repair services. We help individuals to safeguard your digital identity for a positive future. Contact now!"/>
+      </head>
       <InnerBanner
         title={"Repair Online Reputation Personal"}
         info={'Shed defamation and fix your Internet image with our best Online Reputation Repair Services'}

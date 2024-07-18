@@ -66,6 +66,13 @@ export default async function Careers() {
   //const assets = data.includes?.Asset || [];
   return (
     <>
+    <head>
+        <meta title="We're hiring - Exciting Career Opportunities at WTechy" />
+        <meta
+          name="description"
+          content="Career Opportunities - Join our innovative team of dedicated professionals. Apply online now for open digital marketing & Web design and development positions."
+        />
+      </head>
       <InnerBanner
         title={"Careers"}
         info={

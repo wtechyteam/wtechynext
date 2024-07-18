@@ -26,6 +26,12 @@ const ShopifyStore = () => {
   ];
   return (
     <div>
+      <head>
+        <meta title="Shopify Store Management Services | Grow Your Sales "/>
+        <meta
+          name="description"
+          content="Maximize your Shopify store's potential with our comprehensive management services. Trusted agency for Shopify store management solutions. Get started today!"/>
+      </head>
       <InnerBanner
         title={"Shopify Store Management"}
         info={'Smooth in the Function of Your Web Store with Help of Leading Shopify Store Management Company'}

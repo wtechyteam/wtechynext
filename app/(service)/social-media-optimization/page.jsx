@@ -40,7 +40,13 @@ const SocialMediaOpt = () => {
   return (
     <BrowserRouter>
     <div>
-       
+    <head>
+        <meta title="Social Media Agency | Social Media Marketing & Optimization"/>
+        <meta
+          name="description"
+          content="Our social media agency amplify your brand's reach by performing social media marketing and optimization strategies designed to engage your audience."
+        />
+      </head>
       <InnerBanner title={"Social Media Optimization"}
         info={"Let’s Get Together to Make your Brand Reach More Customers by Using Social Media Optimization"}
       />

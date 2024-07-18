@@ -141,9 +141,16 @@ const ContentMarketing = () => {
     },
   ];
   return (
+    
     <BrowserRouter>
     <div>
-      
+    <head>
+        <meta title="Content Marketing Services: Drive More Revenue"/>
+        <meta
+          name="description"
+          content="Reach your audience with our content marketing services to help you create compelling content that builds brand awareness and drives results. Contact us today!"
+        />
+      </head>
       <InnerBanner
         title={"Content Marketing"}
         info={'Reach Out to Your Audience and Raise Brand Awareness with Our Content Marketing Services'}

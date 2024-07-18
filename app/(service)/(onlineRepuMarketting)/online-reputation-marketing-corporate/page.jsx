@@ -33,7 +33,12 @@ const Corporate = () => {
 
   return (
     <div>
-      
+      <head>
+        <meta title="Online Reputation Management: Build a Positive Brand Image"/>
+        <meta
+          name="description"
+          content="Online reputation management (ORM) services: Repair, protect & grow your brand online. We empower businesses & agencies to dominate search results & build trust."/>
+      </head>
       <InnerBanner
         title={"Online Reputation Marketing Corporate"}
         info={'Enhance our Brand’s Reorganization with Online Reputation Management Services'}

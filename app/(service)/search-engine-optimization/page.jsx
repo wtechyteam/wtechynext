@@ -209,7 +209,13 @@ const SearchEngineOpt = () => {
   return (
     <BrowserRouter>
     <div>
-      
+    <head>
+        <meta title="SEO Services |  SEO Company to Grow Business Online"/>
+        <meta
+          name="description"
+          content="Drive more organic traffic & leads with expert SEO Services. Tailored SEO strategies, increase keyword visibility & achieve higher search engine rankings."
+        />
+      </head>
       <InnerBanner
         title={"Search Engine Optimization"}
         info={

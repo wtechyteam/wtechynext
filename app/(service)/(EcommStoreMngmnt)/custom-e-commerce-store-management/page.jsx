@@ -40,7 +40,12 @@ const CustomEcom = () => {
   ];
   return (
     <div>
-      
+      <head>
+        <meta title="E-commerce Store Management | E-commerce Services "/>
+        <meta
+          name="description"
+          content="Maintain a thriving online store with our custom E-commerce store management services. We empower businesses to optimize operations & ensure smooth functionality."/>
+      </head>
       <InnerBanner
         title={"Custom E-Commerce Store Management"}
         info={'Maintain a well-functional E-commerce store with Custom E-commerce store management Experts'}

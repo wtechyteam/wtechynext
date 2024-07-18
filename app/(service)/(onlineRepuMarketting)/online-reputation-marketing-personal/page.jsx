@@ -34,7 +34,12 @@ const Personal = () => {
 
   return (
     <div>
-      
+      <head>
+        <meta title="Personal Online Reputation Management- Build a Positive Image"/>
+        <meta
+          name="description"
+          content="Craft a positive online presence with our personal reputation management services. We help individuals to manage negative content & build trust for career success."/>
+      </head>
       <InnerBanner
         title={"Online Reputation Marketing Personal"}
         info={'Crafting a Positive Image over the Internet with Online Personal Reputation Management'}

@@ -72,7 +72,13 @@ const ShopifyDevelopment = () => {
   ];
   return (
     <div>
-      
+      <head>
+        <meta title="Shopify Website Development Services |  Build Ecommerce Store"/>
+        <meta
+          name="description"
+          content="Grow your online store with our Shopify Development Services. We build high-converting Shopify stores with tailored strategies and advanced optimization."
+        />
+      </head>
       <InnerBanner
         title={"Shopify Development"}
         info={'Create a High-End Website with Shopify and Add More Value to Your Business'}

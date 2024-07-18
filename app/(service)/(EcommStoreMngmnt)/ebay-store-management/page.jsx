@@ -42,7 +42,12 @@ const EbayStore = () => {
 
   return (
     <div>
-      
+      <head>
+        <meta title="eBay Store Management | Product Listing Services"/>
+        <meta
+          name="description"
+          content="Boost your eBay presence & drive sales with our comprehensive eBay store management services.  We handle listing creation, optimization & inventory management."/>
+      </head>
       <InnerBanner
         title={"Ebay Store Management"}
         info={'Establish a strong presence on web stores with a leading Ebay Store Management company.'}

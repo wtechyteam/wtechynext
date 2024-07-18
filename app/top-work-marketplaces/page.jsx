@@ -75,6 +75,13 @@ const TopWorkMarketplaces = () => {
 
     return (
         <>
+        <head>
+        <meta title="Trusted Marketplace Network for Digital Marketing" />
+        <meta
+          name="description"
+          content="Grow your business with end-to-end digital marketing agency. Find us on Upwork, Clutch, PeoplePerHour, Fiverr & Guru that Fuels exceptional business results!"
+        />
+      </head>
             <InnerBanner title={'Top Work Marketplaces'} info={'Wtechy has enrolled on the biggest as well as the most famous platforms worldwide. We assist their clients with prospering results. '} />
             <div className="portfolioWrapper">
                 {topWorkMarketPlacesData && topWorkMarketPlacesData.map((item, index) => (

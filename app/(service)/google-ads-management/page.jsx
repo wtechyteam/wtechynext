@@ -70,7 +70,13 @@ const GoogleAds = () => {
   return (
     <BrowserRouter>
     <div>
-       
+    <head>
+        <meta title="Google Ads Management Services | Maximize Your ROI"/>
+        <meta
+          name="description"
+          content="Maximize your online presence with our Data-Driven Google Ads Management services gets you more clicks & sales. Reach new customers and  boost ROI."
+        />
+      </head>
       <InnerBanner
         title={"Google Ads Management"}
         info={'Google Ads Management Helping You to Make Better Data-Driven Decisions'}
