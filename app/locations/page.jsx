@@ -1,4 +1,4 @@
-'use client'
+
 import React from 'react'
 import InnerBanner from './../../common/InnerBanner'
 import SectionTopInfo from './../../common/SectionTopInfo'
