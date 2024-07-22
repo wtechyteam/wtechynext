@@ -58,6 +58,7 @@ export default async function InsightPage({ params }) {
   const relatedPosts = getRelatedPosts(insight, insights);
 
   return (
+    
     <div style={styles.page}>
       {/* ---------innerBanner------------- */}
       <section className="innerBanner text-center" style={styles.innerBanner}>

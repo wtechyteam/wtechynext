@@ -217,6 +217,7 @@ const AboutUs = () => {
   return (
     <>
      <head>
+      <title>About WTechy - Growth Focused Digital Marketing Agency</title>
         <meta title="About WTechy - Growth Focused Digital Marketing Agency"/>
         <meta name="description"
         content="Unleash your brand's potential. We're a results-driven digital marketing agency crafting custom strategies for SEO, PPC & social media. Let's grow together! "/>

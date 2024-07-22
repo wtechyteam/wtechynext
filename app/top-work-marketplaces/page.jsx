@@ -76,6 +76,7 @@ const TopWorkMarketplaces = () => {
     return (
         <>
         <head>
+            <title>Trusted Marketplace Network for Digital Marketing</title>
         <meta title="Trusted Marketplace Network for Digital Marketing" />
         <meta
           name="description"

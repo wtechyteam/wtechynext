@@ -13,6 +13,7 @@ const Services = () => {
     return (
         <>
          <head>
+            <title>Digital Marketing Services: Grow Your Business Online</title>
         <meta title="Digital Marketing Services: Grow Your Business Online"/>
         <meta name="description"
         content="Boost your online presence with our comprehensive digital marketing services. Drive success through tailored performance marketing & media strategies. Hire Us!"/>

@@ -8,11 +8,11 @@ import Image from 'next/image'
 const Portfolio = () => {
     return (
         <>
-            <Head>
-                <title>Full-Stack Digital Marketing Agency: Scale Your Business</title>.
+            <head>
+                <title>Full-Stack Digital Marketing Agency: Scale Your Business</title>
                 <meta title="Our Success Stories: WTechy's Digital Marketing Portfolio"/>
                 <meta name="description" content="Explore proven digital marketing strategies! See our award-winning portfolio & how we provide performance marketing services to clients as per their needs." />
-            </Head>
+            </head>
             <InnerBanner
                 title={'Portfolio'}
                 info={"Check out WTechy's portfolio! Explore our best work to see how we can help you achieve your marketing goals by showcasing real marketing results for clients."}

@@ -5,6 +5,7 @@ const ContactUS = () => {
   return (
     <>
       <head>
+        <title>Get in Touch with WTechy: Your Partner in Digital Growth</title>
         <meta title="Get in Touch with WTechy: Your Partner in Digital Growth" />
         <meta
           name="description"
