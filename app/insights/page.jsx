@@ -21,7 +21,7 @@ export default async function Insights() {
 
   return (
     <>
-     <head>
+      <head>
         <meta title="Digital Marketing Strategies - Read Our Expert Insights"/>
         <meta name="description"
         content="Find the latest insights into digital marketing strategies and trends on WTechy's blog. We reveal the secrets & best practices we use for our clients. Read more!"/>
@@ -56,24 +56,28 @@ export default async function Insights() {
 
             return (
               <div className="col-md-4" key={index}>
-                <div className="card" style={{ width: "18rem" }}>
+                <div style={styles.card}>
                   <div className="card-body">
                     {imageUrl && (
-                      <Image
-                        src={`https:${imageUrl}`}
-                        alt={item.fields.titleInsights}
-                        width={300}
-                        height={200}
-                      />
+                      <div style={styles.imageContainer}>
+                        <Image
+                          src={`https:${imageUrl}`}
+                          alt={item.fields.titleInsights}
+                          layout="fill"
+                          objectFit="cover"
+                        />
+                      </div>
                     )}
-                    <h5 className="card-title">{item.fields.title}</h5>
-                    <p className="card-text">{item.fields.description}</p>
-                    <Link
-                      href={`/insights/${item.fields.slug}`}
-                      className="btn btn-primary"
-                    >
-                      Go
-                    </Link>
+                    <div style={styles.content}>
+                      <h5 style={styles.title}>{item.fields.title}</h5>
+                      <p style={styles.description}>{item.fields.description}</p>
+                      <Link style={styles.link}
+                        href={`/insights/${item.fields.slug}`}
+                        className="btn btn-primary"
+                      >
+                        Read more
+                      </Link>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -84,3 +88,60 @@ export default async function Insights() {
     </>
   );
 }
+
+const styles = {
+  card: {
+    border: '1px solid #ddd',
+    borderRadius: '8px',
+    boxShadow: '0 4px 8px rgba(0, 0, 0, 0.1)',
+    overflow: 'hidden',
+    width: '100%',
+    margin: '20px 0',
+    display: 'flex',
+    flexDirection: 'column',
+    height: '450px', // Set a fixed height
+  },
+  imageContainer: {
+    position: 'relative',
+    width: '100%',
+    height: '200px',
+  },
+  content: {
+    padding: '16px',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    flexGrow: 1, // Ensure content takes up remaining space
+  },
+  title: {
+    fontSize: '1.5em',
+    margin: '0 0 8px 0',
+  },
+  description: {
+    fontSize: '1em',
+    color: '#555',
+    margin: '0 0 16px 0',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    display: '-webkit-box',
+    WebkitLineClamp: 3,
+    WebkitBoxOrient: 'vertical',
+  },
+  button: {
+    display: 'inline-block',
+    padding: '10px 20px',
+    fontSize: '1em',
+    color: '#fff',
+    background: '#0070f3',
+    borderRadius: '4px',
+    textAlign: 'center',
+    textDecoration: 'none',
+    alignSelf: 'flex-start',
+    marginTop: 'auto', // Push the button to the bottom of the card content
+  },
+
+  link: {
+    marginTop: 'auto',
+    
+  }
+};
