@@ -67,7 +67,7 @@ export default async function Careers() {
   return (
     <>
     <head>
-      <title>We're hiring - Exciting Career Opportunities at WTechy</title>
+      <title>We&apos;re hiring - Exciting Career Opportunities at WTechy</title>
         <meta title="We're hiring - Exciting Career Opportunities at WTechy" />
         <meta
           name="description"

@@ -22,7 +22,7 @@ export default async function Insights() {
   return (
     <>
       <head>
-      <title>"Digital Marketing Strategies - Read Our Expert Insights"</title>
+      <title>Digital Marketing Strategies - Read Our Expert Insights</title>
         <meta title="Digital Marketing Strategies - Read Our Expert Insights"/>
         <meta name="description"
         content="Find the latest insights into digital marketing strategies and trends on WTechy's blog. We reveal the secrets & best practices we use for our clients. Read more!"/>
