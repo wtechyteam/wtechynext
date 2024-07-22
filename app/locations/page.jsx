@@ -1,9 +1,7 @@
-
-import React from 'react'
-import InnerBanner from './../../common/InnerBanner'
-import SectionTopInfo from './../../common/SectionTopInfo'
-//import { sitemapDataUSA } from './data/sitemapData'
-
+import React from 'react';
+import InnerBanner from './../../common/InnerBanner';
+import SectionTopInfo from './../../common/SectionTopInfo';
+import Link from 'next/link';
 
 const USAstatesData = [
     { id: 1, title: "California", link: "/seo-services-california" },
@@ -22,12 +20,10 @@ const AustraliaStatesData = [
     { id: 2, title: "Victoria", link: "/seo-services-victoria" },
     { id: 3, title: "SouthAustralia", link: "/seo-services-south-australia" },
     { id: 4, title: "SouthWales", link: "/seo-services-south-wales" },
-    { id: 5, title: "Queensland", link: "/seo-services-queensland" },
-    
+    { id: 5, title: "Queensland", link: "/seo-services-queensland" }
 ];
 
 const CanadaStatesData = [
-    
     { id: 2, title: "Quebec", link: "/seo-services-quebec" },
     { id: 3, title: "Ontario", link: "/seo-services-ontario" },
     { id: 4, title: "Alberta", link: "/seo-services-alberta" },
@@ -35,90 +31,81 @@ const CanadaStatesData = [
     { id: 6, title: "Saskatchewan", link: "/seo-services-saskatchewan" }
 ];
 
-
 const LocationsFront = () => {
   return (
     <>
-    <InnerBanner
-                title={'Locations We Serve In'}
-                // info={'WTechy helps businesses thrive online with expert Digital Marketing Strategies and Web Design Solutions. We turn possibilities into reality for your Brand.'}
-            />
-    <section className="sectionPadding bg-gray">
-                <div className="container">
-                    <SectionTopInfo
-                        smallTitle={'SEO services'}
-                        title={'USA'}
-                        text={'Services we offer in the states of USA'}
-                    />
+      <InnerBanner
+        title={'Locations We Serve In'}
+      />
+      <section className="sectionPadding bg-gray">
+        <div className="container">
+          <SectionTopInfo
+            smallTitle={'SEO services'}
+            title={'USA'}
+            text={'Services we offer in the states of USA'}
+          />
+        </div>
+        <div className='Wrapper' style={{display: 'flex', gap:'2rem', marginLeft: '18rem', marginTop: '4rem'}}>
+          {USAstatesData.map((item) => (
+            <section key={item.id}>
+              <div className="container">
+                <div className="row">
+                  <div className="col-md-6">
+                    <Link href={`/locations${item.link}`}>
+                      <a className='title-xl fw' style={{ textDecoration: 'none', fontSize: '25px' }}>{item.title}</a>
+                    </Link>
+                  </div>
                 </div>
-                <div className='Wrapper' style={{display: 'flex',gap:'2rem', marginLeft: '18rem', marginTop: '4rem'}}>
-                {USAstatesData && USAstatesData.map((item, index) => {
-                    return (
-                        <section key={item.id}>
-                            <div className="container" >
-                                <div className="row" >
-                                    <div className="col-md-6">
-                                        <a href= {item.link} className='title-xl fw' style={{textDecoration: 'none', fontSize: '25px'}}>{item.title}</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    )
-                })}
-                    
-                </div>
-
-                <div className="container">
-                    <SectionTopInfo
-                        //smallTitle={'SEO services'}
-                        title={'Australia'}
-                        text={'Services we offer in the states of Australia'}
-                    />
-                </div>
-                <div className='Wrapper' style={{display: 'flex',gap:'2rem', marginLeft: '18rem', marginTop: '4rem'}}>
-                {AustraliaStatesData && AustraliaStatesData.map((item, index) => {
-                    return (
-                        <section key={item.id}>
-                            <div className="container" >
-                                <div className="row" >
-                                    <div className="col-md-6">
-                                        <a href= {item.link} className='title-xl fw' style={{textDecoration: 'none', fontSize: '25px'}}>{item.title}</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    )
-                })}
-                    
-                </div>
-
-                <div className="container">
-                    <SectionTopInfo
-                        //smallTitle={'SEO services'}
-                        title={'Canada'}
-                        text={'Services we offer in the states of Canada'}
-                    />
-                </div>
-                <div className='Wrapper' style={{display: 'flex',gap:'2rem', marginLeft: '18rem', marginTop: '4rem'}}>
-                {CanadaStatesData && CanadaStatesData.map((item, index) => {
-                    return (
-                        <section key={item.id}>
-                            <div className="container" >
-                                <div className="row" >
-                                    <div className="col-md-6">
-                                        <a href={item.link} className='title-xl fw' style={{textDecoration: 'none', fontSize: '25px'}}>{item.title}</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    )
-                })}
-                    
-                </div>
-
+              </div>
             </section>
+          ))}
+        </div>
+        {/* Repeat for Australia and Canada */}
+        <div className="container">
+          <SectionTopInfo
+            title={'Australia'}
+            text={'Services we offer in the states of Australia'}
+          />
+        </div>
+        <div className='Wrapper' style={{display: 'flex', gap:'2rem', marginLeft: '18rem', marginTop: '4rem'}}>
+          {AustraliaStatesData.map((item) => (
+            <section key={item.id}>
+              <div className="container">
+                <div className="row">
+                  <div className="col-md-6">
+                    <Link href={`/locations${item.link}`}>
+                      <a className='title-xl fw' style={{ textDecoration: 'none', fontSize: '25px' }}>{item.title}</a>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </section>
+          ))}
+        </div>
+        <div className="container">
+          <SectionTopInfo
+            title={'Canada'}
+            text={'Services we offer in the states of Canada'}
+          />
+        </div>
+        <div className='Wrapper' style={{display: 'flex', gap:'2rem', marginLeft: '18rem', marginTop: '4rem'}}>
+          {CanadaStatesData.map((item) => (
+            <section key={item.id}>
+              <div className="container">
+                <div className="row">
+                  <div className="col-md-6">
+                    <Link href={`/locations${item.link}`}>
+                      <a className='title-xl fw' style={{ textDecoration: 'none', fontSize: '25px' }}>{item.title}</a>
+                    </Link>
+                  </div>
+                </div>
+              </div>
+            </section>
+          ))}
+        </div>
+      </section>
     </>
-  )
+  );
 }
 
-export default LocationsFront
+export default LocationsFront;
