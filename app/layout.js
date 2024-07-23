@@ -13,6 +13,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+
+      <link rel="icon" href="/favicon.ico" />
+
         {/* <title>WTechy: Digital Marketing Agency | Grow Your Brand Online</title> */}
         <meta title="WTechy: Digital Marketing Agency | Grow Your Brand Online"/>
         <meta name="description"
