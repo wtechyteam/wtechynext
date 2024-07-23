@@ -36,7 +36,7 @@ const Footer = () => {
       link: "/contact",
     },
     {
-      title: "locations",
+      title: "Locations",
       link: "/locations",
     },
     // Add more service sections as needed
