@@ -17,6 +17,24 @@ export default function RootLayout({ children }) {
         <meta title="WTechy: Digital Marketing Agency | Grow Your Brand Online"/>
         <meta name="description"
         content="Boost your business with WTechy's expert digital marketing services. From SEO to social media, we help you reach your target audience and drive growth. Visit now!"/>
+      
+      <meta name="google-site-verification" content="E8rAJvSHBFK662FDIdBiIwwlFycqsH9kOAzfa6jNpnc" />
+
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1ZWHY1Z5SB"></script> 
+
+     {/* Include the Google Analytics script */}
+     <script
+          id="google-analytics"
+          strategy="afterInteractive" // Load script after page is interactive
+        >
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-1ZWHY1Z5SB');
+          `}
+        </script>
+      
       </head>
       <body>
         <HeaderNavbar/>

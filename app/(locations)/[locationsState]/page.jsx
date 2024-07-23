@@ -60,7 +60,7 @@ export default async function LocationState({ params }) {
   const location = await getLocationBySlug(locationsState);
 
   if (!location) {
-    return <div>Locations not found</div>;
+    return <div>Page not found</div>;
   }
 
   return (
