@@ -40,7 +40,7 @@ const ContactUS = () => {
                       </p>
                     </div>
                   </li>
-                  <li>
+                  {/* <li>
                     <i className="fa-solid fa-location-dot me-3 mt-1"></i>
                     <div>
                       <h5>Corporate Office Chandigarh</h5>
@@ -49,7 +49,7 @@ const ContactUS = () => {
                         Sector 34, Chandigarh, 160022
                       </p>
                     </div>
-                  </li>
+                  </li> */}
                   <li>
                     <i className="fa-solid fa-phone me-3 mt-1"></i>
                     <p>
