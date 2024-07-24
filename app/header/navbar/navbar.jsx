@@ -65,7 +65,7 @@ const HeaderNavbar = () => {
 
         <Offcanvas.Body>
           <Nav className="justify-content-end flex-grow-1">
-            <ul className="d-none d-xl-flex desktopMenu navList">
+            <ul className="d-none d-xl-flex desktopMenu">
               {headerData.map((navItem, index) => (
                 <li
                   key={index}
@@ -106,7 +106,7 @@ const HeaderNavbar = () => {
               ))}
             </ul>
 
-            <ul className='d-xl-none mobileMenu navList'>
+            <ul className='d-xl-none mobileMenu'>
               {headerData && headerData.map((item, index) => {
                 return (
                   <li key={index} className="navItemWrap">
