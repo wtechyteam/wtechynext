@@ -26,13 +26,13 @@ export default async function LocationsFront() {
 
   return (
     <>
-    {/* <head>
-    <title>Digital Marketing Strategies - See the locations we serve</title>
-    <meta title="Digital Marketing Strategies - Read Our Expert Insights"/>
+    <head>
+    <title>Locations We Serve In</title>
+    {/* <meta title="Digital Marketing Strategies - Read Our Expert Insights"/>
         <meta name="description"
         content="Find the latest insights into digital marketing strategies and trends on WTechy's blog. We reveal the secrets & best practices we use for our clients. Read more!"/>
-      
-    </head> */}
+       */}
+    </head>
       <InnerBanner title={"Locations We Serve In"} />
       <section className="sectionPadding bg-gray">
         <div className="container">

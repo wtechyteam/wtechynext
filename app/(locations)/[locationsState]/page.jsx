@@ -65,6 +65,11 @@ export default async function LocationState({ params }) {
 
   return (
     <>
+      <head>
+        <title>
+        {`SEO Services Company in ${location.fields.name}`}
+        </title>
+      </head>
       <InnerBanner
         title={`SEO Services Company in ${location.fields.name}`}
         info={"We Help Your Business Soar to Greater Heights"}
