@@ -139,11 +139,11 @@ $background-color_3: transparent;
       transition: all ease-in-out .3s;
       color: #000;
 
-      &::before {
-        content: "\f061";
-        font-family: "FontAwesome";
-        margin-right: 5px;
-      }
+      // &::before {
+      //   content: "\f061";
+      //   font-family: "FontAwesome";
+      //   margin-right: 5px;
+      // }
 
       &:hover,
       &.active {
@@ -199,11 +199,11 @@ button.navbar-toggler {
         text-decoration: none;
         border-bottom: 1px solid #ddd;
 
-        &::before {
-          content: "\f061";
-          font-family: "FontAwesome";
-          margin-right: 5px;
-        }
+        // &::before {
+        //   content: "\f061";
+        //   font-family: "FontAwesome";
+        //   margin-right: 5px;
+        // }
       }
     }
     .accordion-body{
