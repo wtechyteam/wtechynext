@@ -45,6 +45,9 @@ export default async function CareersPage({ params }) {
   }
   return (
     <>
+    <head>
+      <title>{career.fields.jobPost}</title>
+    </head>
       <InnerBanner title={"Job Details"} />
       <section className="sectionPadding">
         <div className="container">
