@@ -73,7 +73,7 @@ const Footer = () => {
           <div className="row footerRow">
             <div className="col-lg-4 col-md-6 pr-5">
               <Link href="/">
-                <Image src={footerLogo} width={100} />
+                <Image src={footerLogo} width={100} alt="footerLogo"/>
               </Link>
               <p className="mt-4 mb-0">
                 The businesses influence digital channels to stay ahead from
