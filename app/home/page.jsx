@@ -17,7 +17,7 @@ const HomePage = () => {
         <title>WTechy: Digital Marketing Agency | Grow Your Brand Online</title>
         <meta title="WTechy: Digital Marketing Agency | Grow Your Brand Online"/>
         <meta name="description"
-        content="Boost your business with WTechy's expert digital marketing services. From SEO to social media, we help you reach your target audience and drive growth. Visit now!"/>
+        content="Boost your business with WTechy's expert digital marketing services. From SEO to social media, we help you reach your target audience and drive growth."/>
       </head>
             <BannerSlider/>
             <HomeSection2/>
