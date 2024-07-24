@@ -83,7 +83,7 @@ const Footer = () => {
             </div>
             <div className="col-lg-2 col-md-6">
               <h2 className="title-sm fw-bold mb-4">Top Links</h2>
-              <ul className="footerList linkList">
+              <ul className="footerList">
                 {topLinks.map((list, index) => (
                   <li className={`serviceWrap`} key={index}>
                     <Link href={list.link} legacyBehavior>
@@ -95,7 +95,7 @@ const Footer = () => {
             </div>
             <div className="col-lg-3 col-md-6">
               <h2 className="title-sm fw-bold mb-4">Services</h2>
-              <ul className="footerList linkList">
+              <ul className="footerList">
                 {serviceLinks.map((list, index) => (
                   <li className="serviceWrap" key={index}>
                     <Link href={list.link} legacyBehavior>
