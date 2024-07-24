@@ -32,9 +32,9 @@ const HomePage = () => {
 
 export default HomePage;
 
-export function generateMetaData(){
-    return{
-        title: "WTechy: Digital Marketing Agency | Grow Your Brand Online ",
-        description: "Boost your business with WTechy's expert digital marketing services. From SEO to social media, we help you reach your target audience and drive growth. Visit now!"
-    }
-}
+// export function generateMetaData(){
+//     return{
+//         title: "WTechy: Digital Marketing Agency | Grow Your Brand Online ",
+//         description: "Boost your business with WTechy's expert digital marketing services. From SEO to social media, we help you reach your target audience and drive growth. Visit now!"
+//     }
+// }
