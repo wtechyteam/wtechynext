@@ -106,30 +106,30 @@ const SearchEngineOpt = () => {
       description:
         "With guest blog posting we share your business’ expertise on websites of other companies so that you can establish yourself as a supreme figure within your industry. This will not only increase your brand credibility but also helps you build contacts with your peers.",
     },
-    {
-      icon: serviceIcon2,
-      title: "LinkedIn Advertising",
-      description:
-        "LinkedIn, the world's largest professional network, presents a wealth of opportunities for businesses. We craft targeted LinkedIn ad campaigns that connect you directly with the decision-makers in your industry. This generates high-quality leads, boosts brand awareness, and positions you as a thought leader. With the right advertising strategy, you have the potential to completely transform your online presence.",
-    },
-    {
-      icon: serviceIcon1,
-      title: "YouTube Advertising",
-      description:
-        "YouTube is a goldmine for reaching new customers. We'll create and manage YouTube ad campaigns that capture attention and drive traffic to your website or landing page. With our expertise, your brand could be seen by millions of viewers and open doors to a whole new audience.",
-    },
-    {
-      icon: serviceIcon2,
-      title: "WordPress Web Design",
-      description:
-        "Our team will build a stunning and user-friendly website. We'll design it to perfectly reflect your brand identity and make it easy for visitors to find the information they need. Specializing in WordPress development, we create websites that are easy for you to manage and update as your business grows. It helps you to maintain a fresh and informative online presence.",
-    },
-    {
-      icon: serviceIcon2,
-      title: "Shopify Development",
-      description:
-        "Shopify is a powerful platform that makes it simple to set up and manage your online store. We'll design and develop a custom Shopify store that showcases your products perfectly and converts visitors into customers. With Shopify, you can accept payments, track inventory, and manage your business from one central location.",
-    },
+    // {
+    //   icon: serviceIcon2,
+    //   title: "LinkedIn Advertising",
+    //   description:
+    //     "LinkedIn, the world's largest professional network, presents a wealth of opportunities for businesses. We craft targeted LinkedIn ad campaigns that connect you directly with the decision-makers in your industry. This generates high-quality leads, boosts brand awareness, and positions you as a thought leader. With the right advertising strategy, you have the potential to completely transform your online presence.",
+    // },
+    // {
+    //   icon: serviceIcon1,
+    //   title: "YouTube Advertising",
+    //   description:
+    //     "YouTube is a goldmine for reaching new customers. We'll create and manage YouTube ad campaigns that capture attention and drive traffic to your website or landing page. With our expertise, your brand could be seen by millions of viewers and open doors to a whole new audience.",
+    // },
+    // {
+    //   icon: serviceIcon2,
+    //   title: "WordPress Web Design",
+    //   description:
+    //     "Our team will build a stunning and user-friendly website. We'll design it to perfectly reflect your brand identity and make it easy for visitors to find the information they need. Specializing in WordPress development, we create websites that are easy for you to manage and update as your business grows. It helps you to maintain a fresh and informative online presence.",
+    // },
+    // {
+    //   icon: serviceIcon2,
+    //   title: "Shopify Development",
+    //   description:
+    //     "Shopify is a powerful platform that makes it simple to set up and manage your online store. We'll design and develop a custom Shopify store that showcases your products perfectly and converts visitors into customers. With Shopify, you can accept payments, track inventory, and manage your business from one central location.",
+    // },
   ];
 
   const whyChoose = [
