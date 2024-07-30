@@ -41,6 +41,7 @@ const SocialMediaOpt = () => {
     <BrowserRouter>
     <div>
     <head>
+      <title>Social Media Agency | Social Media Marketing & Optimization</title>
         <meta title="Social Media Agency | Social Media Marketing & Optimization"/>
         <meta
           name="description"

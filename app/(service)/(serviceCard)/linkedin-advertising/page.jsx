@@ -37,7 +37,13 @@ const LinkedInAdvertising = () => {
 
   return (
     <div>
-      
+      <head>
+        <title>LinkedIn Advertising Solutions: Grow Your Business | WTechy</title>
+        <meta title="LinkedIn Advertising Solutions: Grow Your Business | WTechy"/>
+        <meta
+          name="description"
+          content="Drive business growth with LinkedIn Advertising Solutions tailored by WTechy. Maximize your digital marketing ROI with our expert strategies. Connect now!"/>
+      </head>
       <InnerBanner
         title={"LinkedIn Advertising"}
         info={"Connect with your ideal audience on LinkedIn with Wtechy's strategic advertising campaigns. "}

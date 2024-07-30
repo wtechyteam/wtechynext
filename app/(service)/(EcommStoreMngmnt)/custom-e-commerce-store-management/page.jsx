@@ -41,7 +41,8 @@ const CustomEcom = () => {
   return (
     <div>
       <head>
-        <meta title="E-commerce Store Management | E-commerce Services "/>
+        <title>E-commerce Store Management Services | Wtechy</title>
+        <meta title="E-commerce Store Management Services | Wtechy "/>
         <meta
           name="description"
           content="Maintain a thriving online store with our custom E-commerce store management services. We empower businesses to optimize operations & ensure smooth functionality."/>

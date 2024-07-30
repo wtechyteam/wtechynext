@@ -30,6 +30,7 @@ const WordpressDevelopment = () => {
   return (
     <div>
       <head>
+        <title>WordPress Website Development Services | Craft Your Website</title>
         <meta title="WordPress Website Development Services | Craft Your Website"/>
         <meta
           name="description"

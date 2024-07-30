@@ -39,6 +39,7 @@ const RepairPersonal = () => {
   return (
     <div>
       <head>
+        <title>Repair Personal Reputation: Enhance Your Online Image</title>
         <meta title="Repair Personal Reputation: Enhance Your Online Image"/>
         <meta
           name="description"

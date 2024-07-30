@@ -210,10 +210,11 @@ const SearchEngineOpt = () => {
     <BrowserRouter>
     <div>
     <head>
-        <meta title="SEO Services |  SEO Company to Grow Business Online"/>
+      <title>SEO Services | Top SEO Company to Grow Business Online</title>
+        <meta title="SEO Services | Top SEO Company to Grow Business Online"/>
         <meta
           name="description"
-          content="Drive more organic traffic & leads with expert SEO Services. Tailored SEO strategies, increase keyword visibility & achieve higher search engine rankings."
+          content="Boost your online visibility with our expert SEO services. Our tailored SEO solutions & strategies helps to increase rankings and connect you with ideal customers."
         />
       </head>
       <InnerBanner

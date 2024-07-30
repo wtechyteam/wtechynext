@@ -145,10 +145,11 @@ const ContentMarketing = () => {
     <BrowserRouter>
     <div>
     <head>
-        <meta title="Content Marketing Services: Drive More Revenue"/>
+      <title>Content Marketing & SEO Services: Grow Your Online Presence</title>
+        <meta title="Content Marketing & SEO Services: Grow Your Online Presence"/>
         <meta
           name="description"
-          content="Reach your audience with our content marketing services to help you create compelling content that builds brand awareness and drives results. Contact us today!"
+          content="Attract & engage customers with our data-driven content marketing & SEO services. Get more leads, boost website traffic, and achieve your business goals."
         />
       </head>
       <InnerBanner

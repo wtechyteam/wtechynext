@@ -60,7 +60,8 @@ const AmazonStore = () => {
   return (
     <div>
       <head>
-        <meta title="Amazon Store Management Services - Optimize Your Sales"/>
+        <title>Amazon Store Management Services - Optimize Your Sales Today</title>
+        <meta title="Amazon Store Management Services - Optimize Your Sales Today"/>
         <meta
           name="description"
           content="Increase sales with our Amazon store management services. We're a Amazon store management agency, help businesses to optimize listings & enhance brand presence."/>
