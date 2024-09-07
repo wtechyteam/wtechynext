@@ -40,16 +40,7 @@ const ContactUS = () => {
                       </p>
                     </div>
                   </li>
-                  {/* <li>
-                    <i className="fa-solid fa-location-dot me-3 mt-1"></i>
-                    <div>
-                      <h5>Corporate Office Chandigarh</h5>
-                      <p>
-                        SCO 85-86, 1st Floor, near PESCO Office, Sector 34A,
-                        Sector 34, Chandigarh, 160022
-                      </p>
-                    </div>
-                  </li> */}
+                  
                   <li>
                     <i className="fa-solid fa-phone me-3 mt-1"></i>
                     <p>
