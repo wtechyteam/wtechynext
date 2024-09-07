@@ -57,8 +57,15 @@ export default async function InsightPage({ params }) {
 
   const relatedPosts = getRelatedPosts(insight, insights);
 
-  return (
-    
+  return (<>
+    <head>
+       <title>Digital Marketing Strategies - Read Our Expert Insights</title>
+
+        <meta title="Digital Marketing Strategies - Read Our Expert Insights"/>
+        <meta
+          name="description"
+          content="Find the latest insights into digital marketing strategies and trends on WTechy's blog. We reveal the secrets & best practices we use for our clients. Read more!"/>
+      </head>
     <div style={styles.page}>
       {/* ---------innerBanner------------- */}
       <section className="innerBanner text-center" style={styles.innerBanner}>
@@ -133,6 +140,7 @@ export default async function InsightPage({ params }) {
         </section>
       </div>
     </div>
+    </>
   );
 }
 

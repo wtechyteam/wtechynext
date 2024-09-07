@@ -30,7 +30,13 @@ const TwitterAdvertising = () => {
   ];
   return (
     <div>
-      
+        <head>
+        <title>Targeted Twitter Campaigns: Grow Your Business with WTechy</title>
+        <meta title="Targeted Twitter Campaigns: Grow Your Business with WTechy"/>
+        <meta
+          name="description"
+          content="Maximize your business growth with WTechy's targeted Twitter campaigns. Elevate your online presence and reach your audience effectively. Contact us now!"/>
+      </head>
       <InnerBanner
         title={"Twitter Advertising"}
         info={"Access the full potential of Twitter through Wtechy's targeted ads for real results."}

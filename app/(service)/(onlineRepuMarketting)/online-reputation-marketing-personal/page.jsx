@@ -35,6 +35,7 @@ const Personal = () => {
   return (
     <div>
       <head>
+        <title>Personal Online Reputation Management- Build a Positive Image</title>
         <meta title="Personal Online Reputation Management- Build a Positive Image"/>
         <meta
           name="description"

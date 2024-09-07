@@ -27,7 +27,8 @@ const ShopifyStore = () => {
   return (
     <div>
       <head>
-        <meta title="Shopify Store Management Services | Grow Your Sales "/>
+        <title>Shopify Store Management Services Company | WTechy</title>
+        <meta title="Shopify Store Management Services Company | WTechy"/>
         <meta
           name="description"
           content="Maximize your Shopify store's potential with our comprehensive management services. Trusted agency for Shopify store management solutions. Get started today!"/>

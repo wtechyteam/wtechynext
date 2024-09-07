@@ -36,7 +36,14 @@ const YouTubeAdvertising = () => {
   return (
 
     <div>
-      
+       <head>
+       <title>Achieve Success with WTechy&apos;s YouTube Advertising Solutions</title>
+
+        <meta title="Achieve Success with WTechy&aposs YouTube Advertising Solutions"/>
+        <meta
+          name="description"
+          content="Boost your brand with WTechy's YouTube ads! Elevate visibility, engage audiences, and drive conversions with our expert digital marketing solutions. Hire us now!"/>
+      </head>
       <InnerBanner
         title={"YouTube Advertising"}
         info={"Let Wtechy be your YouTube ad dream team and watch your business grow."}

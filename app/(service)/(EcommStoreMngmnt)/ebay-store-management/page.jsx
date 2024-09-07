@@ -43,6 +43,7 @@ const EbayStore = () => {
   return (
     <div>
       <head>
+        <title>eBay Store Management | Product Listing Services</title>
         <meta title="eBay Store Management | Product Listing Services"/>
         <meta
           name="description"

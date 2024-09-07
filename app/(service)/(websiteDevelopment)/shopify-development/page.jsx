@@ -73,10 +73,11 @@ const ShopifyDevelopment = () => {
   return (
     <div>
       <head>
-        <meta title="Shopify Website Development Services |  Build Ecommerce Store"/>
+        <title>Shopify Website Development Services Company | Wtechy</title>
+        <meta title="Shopify Website Development Services Company | Wtechy"/>
         <meta
           name="description"
-          content="Grow your online store with our Shopify Development Services. We build high-converting Shopify stores with tailored strategies and advanced optimization."
+          content="Enhance Your Brand Visibilty With our advance Shopify development services. Our tailored optimization strategies will boost your product sales. "
         />
       </head>
       <InnerBanner
