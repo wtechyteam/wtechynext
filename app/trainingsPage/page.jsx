@@ -6,7 +6,7 @@ import { fetchEntries } from "../contentful";
 import HomeSection3 from "./HomeSection3";
 import HomeSection4 from "./HomeSection4";
 import MyForm from "./../contact/contactForm";
-import ImageSlider from "./ImageSlider";
+import ImageGrid from "./ImageGrid";
 
 const trainingTopics = [
   {
@@ -167,9 +167,9 @@ export default async function Careers() {
           </div>
         </div>
       </section>
-
+      <ImageGrid />
       <HomeSection3 />
-      {/* <ImageSlider /> */}
+      
       <HomeSection4 />
       <section className="sectionPadding">
         <div className="container">
