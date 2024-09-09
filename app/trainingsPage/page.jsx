@@ -140,6 +140,15 @@ export default async function Careers() {
           </strong>
           You will learn real-world skills that you can use immediately in your job or business.
         </p>
+        <div className="text-start mt-4">
+                <a 
+                  href="/contact" 
+                  className="dBtn btnPrimary mt-4 hasShadow" 
+                  title="Contact Us"
+                >
+                  Contact Us
+                </a>
+              </div>
       </div>
       <div className="col-lg-6">
         <video
