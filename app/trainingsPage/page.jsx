@@ -6,7 +6,7 @@ import { fetchEntries } from "../contentful";
 import HomeSection3 from "./HomeSection3";
 import HomeSection4 from "./HomeSection4";
 import MyForm from "./../contact/contactForm";
-import ImageSlider from "./ImageSlider";
+import ImageGrid from "./ImageGrid";
 
 const trainingTopics = [
   {
@@ -140,6 +140,15 @@ export default async function Careers() {
           </strong>
           You will learn real-world skills that you can use immediately in your job or business.
         </p>
+        <div className="text-start mt-4">
+                <a 
+                  href="/contact" 
+                  className="dBtn btnPrimary mt-4 hasShadow" 
+                  title="Contact Us"
+                >
+                  Contact Us
+                </a>
+              </div>
       </div>
       <div className="col-lg-6">
         <video
@@ -167,9 +176,9 @@ export default async function Careers() {
           </div>
         </div>
       </section>
-
+      <ImageGrid />
       <HomeSection3 />
-      {/* <ImageSlider /> */}
+      
       <HomeSection4 />
       <section className="sectionPadding">
         <div className="container">
