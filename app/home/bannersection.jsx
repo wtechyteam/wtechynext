@@ -10,12 +10,11 @@ import {scrollTop} from '../../common/utils'
 import { Link } from 'react-router-dom'
 import { BrowserRouter } from 'react-router-dom'
 import Image from 'next/image';
-import {useMounted} from "./../../common/unmounted"
+
 
 
 const BannerSlider = () => {
-  const mounted = useMounted();
-  if(!mounted) return null;
+  
   const bannerSliderSettings = {
     dots: false,
     infinite: true,
