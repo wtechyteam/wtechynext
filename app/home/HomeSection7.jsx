@@ -10,8 +10,8 @@ import testimonial5 from "./../../public/assets/Images/homepage/testimonial5.png
 import testimonial6 from "./../../public/assets/Images/homepage/testimonial6.png"
 
 import Image from 'next/image';
-import { BrowserRouter } from 'react-router-dom';
-import {useMounted} from "./../../common/unmounted"
+
+
 
 
 
@@ -90,7 +90,7 @@ const HomeSection7 = () => {
     // if(!mounted) return null;
 
     return (
-        <BrowserRouter>
+        
         <section className='sectionPadding'>
             <div className="container text-center" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="600">
                 <div className="sectionTopInfo" >
@@ -125,7 +125,7 @@ const HomeSection7 = () => {
                 </Slider>
             </div>
         </section>
-        </BrowserRouter>
+       
     );
 };
 

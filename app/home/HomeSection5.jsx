@@ -3,10 +3,9 @@
 // import serviceIcon2 from '../../../assets/Images/homepage/MarketingStrategies.png'
 import serviceIcon2 from './../../public/assets/Images/homepage/MarketingStrategies.png'
 import serviceIcon1 from './../../public/assets/Images/homepage/digitalMarketing.png'
-import { BrowserRouter, Router, useNavigate } from 'react-router-dom'
+
 import Image from 'next/image'
 
-import {useMounted} from "./../../common/unmounted"
 
 
 const HomeSection5 = () => {
@@ -54,7 +53,7 @@ const HomeSection5 = () => {
 
 
     return (
-        <BrowserRouter>
+        
         <section className='sectionPadding pt-0'>
             <div className="container text-center">
                 <div className="sectionTopInfo" data-aos="fade-up" data-aos-duration="1500">
@@ -77,7 +76,7 @@ const HomeSection5 = () => {
                 </div>
             </div>
         </section>
-        </BrowserRouter>
+        
     );
 };
 

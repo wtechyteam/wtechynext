@@ -1,11 +1,10 @@
 'use client'
 import { FiChevronsRight, FiClock } from "react-icons/fi";
-import { BrowserRouter, Link } from 'react-router-dom';
+import Link from "next/link";
 import { scrollTop } from '../../common/utils'
 //import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 //import { fetchInsights } from '../../../redux/actions/insightsAction';
-import {useMounted} from "./../../common/unmounted"
 
 
 
@@ -36,7 +35,7 @@ const HomeSection6 = () => {
     };
 
     return (
-        <BrowserRouter>
+        
         <section className='sectionPadding bg-gray'>
             <div className="container text-center">
                 <div className="sectionTopInfo" data-aos="fade-up" data-aos-duration="1500">
@@ -75,7 +74,7 @@ const HomeSection6 = () => {
                 <Link to="/insights" className='dBtn btnPrimary mt-4' onClick={scrollTop}>Go To Insights</Link>
             </div>
         </section>
-        </BrowserRouter>
+        
 
     );
 };

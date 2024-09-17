@@ -1,7 +1,6 @@
 'use client'
 import Image from 'next/image';
 import bannerImage from './../../public/assets/Images/homepage/year-of-img.png'
-import {useMounted} from "./../../common/unmounted"
 
 
 const HomeSection2 = () => {
