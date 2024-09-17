@@ -9,8 +9,7 @@ import Image from 'next/image'
 
 const HomeSection3 = () => {
 
-    const mounted = useMounted();
-    if(!mounted) return null;
+   
 
     const serviceData = [
         {

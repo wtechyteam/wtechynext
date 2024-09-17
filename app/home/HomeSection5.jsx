@@ -17,8 +17,7 @@ const HomeSection5 = () => {
         window.scroll(0, 0)
     } */
 
-    const mounted = useMounted();
-    if(!mounted) return null;
+    
 
 
 

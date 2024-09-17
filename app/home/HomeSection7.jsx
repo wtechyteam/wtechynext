@@ -18,8 +18,7 @@ import {useMounted} from "./../../common/unmounted"
 
 const HomeSection7 = () => {
 
-    const mounted = useMounted();
-    if(!mounted) return null;
+    
     const testimonialData = [
         {
 

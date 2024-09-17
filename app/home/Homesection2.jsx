@@ -5,8 +5,7 @@ import {useMounted} from "./../../common/unmounted"
 
 
 const HomeSection2 = () => {
-  const mounted = useMounted();
-  if(!mounted) return null;
+  
 
   return (
     <section className="sectionPadding homepage-slider">

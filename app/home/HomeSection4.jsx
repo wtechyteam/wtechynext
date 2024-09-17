@@ -9,8 +9,7 @@ import {useMounted} from "./../../common/unmounted"
 
 const HomeSection4 = () => {
 
-    const mounted = useMounted();
-    if(!mounted) return null;
+   
 
     return (
         <BrowserRouter>

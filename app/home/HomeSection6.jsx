@@ -10,8 +10,7 @@ import {useMounted} from "./../../common/unmounted"
 
 
 const HomeSection6 = () => {
-    const mounted = useMounted();
-    if(!mounted) return null;
+    
 
     //const { insights } = useSelector((state) => state.insightsApi);
     //const dispatch = useDispatch();

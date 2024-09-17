@@ -14,8 +14,7 @@ import {useMounted} from "./../../common/unmounted"
 
 
 const BannerSlider = () => {
-  const mounted = useMounted();
-  if(!mounted) return null;
+  
   const bannerSliderSettings = {
     dots: false,
     infinite: true,

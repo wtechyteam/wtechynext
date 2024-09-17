@@ -17,8 +17,8 @@ const JobForm = () => {
           <div className={`row align-items-center`}>
             <div className="col-md-7">
               <HubspotForm
-                portalId="46372694"
-                formId="2a5c528c-ff45-414e-9fc3-fe7af792503f"
+                portalId="47335383"
+                formId="6a2695d4-269b-4a77-8ec8-59357787d258"
                 onSubmit={() => console.log("Submit!")}
                 onReady={(form) => console.log("Form ready!")}
                 loading={<div>Loading...</div>}
