@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import './headerStyle.scss';
 import HeaderNavbar from './navbar/navbar.jsx';
-import { BrowserRouter } from 'react-router-dom';
+
 
 
 const Header = ({ activeTab, setActiveTab, currentPath, setCurrentPath }) => {
@@ -10,9 +10,13 @@ const Header = ({ activeTab, setActiveTab, currentPath, setCurrentPath }) => {
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
-        const handleScroll = () => setIsScrolled(window.scrollY > 50);
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
+        if (typeof window !== 'undefined') {
+            // Safe to use document here
+            const handleScroll = () => setIsScrolled(window.scrollY > 50);
+            window.addEventListener('scroll', handleScroll);
+            return () => window.removeEventListener('scroll', handleScroll);
+            document.getElementById('elementId').focus();
+          }
     }, []);
 
 
