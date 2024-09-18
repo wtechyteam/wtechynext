@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Accordion, Navbar, Nav, Offcanvas } from 'react-bootstrap';
 import Logo from './../../../common/SiteLogo';
 import headerLogo from './../../../public/assets/Images/siteLogo.png';
@@ -11,18 +11,9 @@ import { useRouter } from 'next/navigation';
 
 const HeaderNavbar = () => {
   const [show, setShow] = useState(false);
-  const [activeLink, setActiveLink] = useState();
-  const [isClient, setIsClient] = useState(false);
+  const [activeLink, setActiveLink] = useState(null);
 
   const router = useRouter();
-
-  useEffect(() => {
-    setIsClient(true);
-  }, []);
-
-  if (!isClient) {
-    return null;
-  }
 
   const handleNavLinkClick = () => {
     window.scrollTo(0, 0);
@@ -61,7 +52,7 @@ const HeaderNavbar = () => {
         aria-labelledby="offcanvasNavbarLabel-expand-xl"
         placement="end"
       >
-        <Offcanvas.Header show={show.toString()} closeButton />
+        <Offcanvas.Header closeButton />
 
         <Offcanvas.Body>
           <Nav className="justify-content-end flex-grow-1">

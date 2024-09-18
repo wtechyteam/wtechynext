@@ -10,13 +10,9 @@ const Header = ({ activeTab, setActiveTab, currentPath, setCurrentPath }) => {
     const [isScrolled, setIsScrolled] = useState(false);
 
     useEffect(() => {
-        if (typeof window !== 'undefined') {
-            // Safe to use document here
-            const handleScroll = () => setIsScrolled(window.scrollY > 50);
-            window.addEventListener('scroll', handleScroll);
-            return () => window.removeEventListener('scroll', handleScroll);
-            document.getElementById('elementId').focus();
-          }
+        const handleScroll = () => setIsScrolled(window.scrollY > 50);
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
 
