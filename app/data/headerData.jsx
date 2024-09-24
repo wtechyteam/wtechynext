@@ -44,6 +44,41 @@ export const headerData = [
                         id: 4,
                         title: "content marketing",
                         link: "/content-marketing"
+                    },
+                    {
+                        id: 5,
+                        title: "seo for shopify",
+                        link: "/seo-for-shopify"
+                    },
+                    {
+                        id: 6,
+                        title: "seo for wix",
+                        link: "/seo-for-wix"
+                    },
+                    {
+                        id: 7,
+                        title: "seo for wordpress",
+                        link: "/seo-for-wordpress"
+                    },
+                    {
+                        id: 8,
+                        title: "seo for squarespace",
+                        link: "/seo-for-squarespace"
+                    },
+                    {
+                        id: 9,
+                        title: "seo for Next.js",
+                        link: "/seo-for-next-js"
+                    },
+                    {
+                        id: 10,
+                        title: "seo for React Apps",
+                        link: "/seo-for react-apps"
+                    },
+                    {
+                        id: 11,
+                        title: "seo for custom websites",
+                        link: "/seo-for-custom-websites"
                     }
                 ]
             },
@@ -121,37 +156,79 @@ export const headerData = [
                         title: "Shopify Development",
                         link: "/shopify-development"
                     },
+                    {
+                        id: 15,
+                        key:true,
+                        title: "website development with nextjs and nodejs",
+                        link: "website-development-with-nextjs-and-nodejs"
+                    },
+                    {
+                        id: 16,
+                        key: true,
+                        title: "Custom Website Development",
+                        link: "/custom-website-development"
+                    },
+                    {
+                        id: 17,
+                        key: true,
+                        title: "Website Development with Wix",
+                        link: "/website-development-with-wix"
+                    },
+                    {
+                        id: 18,
+                        key: true,
+                        title: "Web App Development",
+                        link: "/web-app-development"
+
+                    }
                 ]
 
             },
+            {
+                subtitle: "Digital Marketing",
+                subLinks: [
+                    {
+                        id: 16,
+                        key:true,
+                        title: "Outsourcing-Offshore Services",
+                        link: "/outsourcing-offshore-services"
+                    },
+                    {
+                        id: 17,
+                        key:true,
+                        title: "360-degree Marketing",
+                        link: "/360-degree-marketing"
+                    }
+                ]
+            }
 
         ]
     },
     {
         id:4,
         title: "Insights",
-        link: "insights",
+        link: "/insights",
     },
     {
         id:5,
         title: "Portfolio",
-        link: "portfolio",
+        link: "/portfolio",
         eventKey: "2",
 
     },
     {
         id:6,
         title: "Top Work Marketplaces",
-        link: "top-work-marketplaces",
+        link: "/top-work-marketplaces",
     },
     {
         id:7,
         title: "Careers",
-        link: "careers",
+        link: "/careers",
     },
     {
         title: "Contact",
-        link: "contact",
+        link: "/contact",
         customClass: "headerBtn"
     }
 ]
