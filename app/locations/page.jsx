@@ -34,7 +34,7 @@ export default async function LocationsFront() {
         content="Find the latest insights into digital marketing strategies and trends on WTechy's blog. We reveal the secrets & best practices we use for our clients. Read more!"/>
        */}
       </head>
-      <InnerBanner title={"Locations We Serve In"} />
+      <InnerBanner title={"Location We Serve In"} />
       <section className="sectionPadding bg-gray">
         <div className="container">
           <SectionTopInfo
