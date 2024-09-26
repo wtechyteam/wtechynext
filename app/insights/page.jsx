@@ -1,4 +1,5 @@
 import SectionTopInfo from "./../../common/SectionTopInfo";
+import SectionTopInfoLoc from "./../../common/SectionTopInfoLocations"
 import InnerBanner from "./../../common/InnerBanner";
 import { FiChevronsRight } from "react-icons/fi";
 import { Container } from "react-bootstrap";
@@ -35,7 +36,7 @@ export default async function Insights() {
       />
       <section className="sectionPadding">
         <Container>
-          <SectionTopInfo
+          <SectionTopInfoLoc
             isCenter={true}
             smallTitle={"Insights"}
             title={"Our Latest Insights"}
