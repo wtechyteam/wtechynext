@@ -113,11 +113,11 @@ const WebsiteDevelopment = () => {
   return (
     <div>
       <head>
-      <title>Website Development with NextJS and NodeJS</title>
-        <meta title="Website Development with NextJS and NodeJS"/>
+      <title>Leading Node.js Development Company | Wtechy</title>
+        <meta title="Leading Node.js Development Company | Wtechy"/>
         <meta
           name="description"
-          content=""
+          content="As a leading Node.js development company, Wtechy provides custom-built, and creating scalable web apps that deliver top-notch performance and user experience."
         />
       </head>
       <InnerBanner

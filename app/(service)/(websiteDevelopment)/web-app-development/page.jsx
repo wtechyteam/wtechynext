@@ -154,9 +154,9 @@ const WebAppDevelopment = () => {
   return (
     <div>
       <head>
-        <title>Web App Development </title>
-        <meta title="Web App Development " />
-        <meta name="description" content="" />
+        <title>Custom Web Application Development Experts | Wtechy</title>
+        <meta title="Custom Web Application Development Experts | Wtechy" />
+        <meta name="description" content="Transform your ideas into reality with Wtechy's custom web application development services, designed to meet your unique business needs. Contact us today!" />
       </head>
       <InnerBanner
         title={"Web App Development"}

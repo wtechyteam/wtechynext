@@ -154,9 +154,9 @@ const WixDevelopment = () => {
   return (
     <div>
       <head>
-        <title>Website Development With Wix</title>
-        <meta title="Website Development With Wix" />
-        <meta name="description" content="" />
+        <title>Creative Wix Website Development Services | Wtechy</title>
+        <meta title="Creative Wix Website Development Services | Wtechy" />
+        <meta name="description" content="Elevate your brand with Wtechy's creative Wix website development services. Custom designs that not only look great but also convert visitors into customers!" />
       </head>
       <InnerBanner
         title={"Website Development with Wix "}

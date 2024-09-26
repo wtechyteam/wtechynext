@@ -1,5 +1,6 @@
 import InnerBanner from "../../common/InnerBanner";
 import SectionTopInfo from "../../common/SectionTopInfo";
+import SectionTopInfoLoc from "../../common/SectionTopInfoLocations"
 import Link from "next/link";
 import { fetchEntries } from "../contentful";
 import './locations.css'
@@ -37,7 +38,7 @@ export default async function LocationsFront() {
       <InnerBanner title={"Location We Serve In"} />
       <section className="sectionPadding bg-gray">
         <div className="container">
-          <SectionTopInfo
+          <SectionTopInfoLoc
             smallTitle={"SEO services"}
             title={"USA"}
             text={"Services we offer in the states of USA"}
@@ -56,7 +57,7 @@ export default async function LocationsFront() {
         </div>
 
         <div className="container">
-          <SectionTopInfo
+          <SectionTopInfoLoc
             title={"Australia"}
             text={"Services we offer in the states of Australia"}
           />
@@ -74,7 +75,7 @@ export default async function LocationsFront() {
         </div>
 
         <div className="container">
-          <SectionTopInfo
+          <SectionTopInfoLoc
             title={"Canada"}
             text={"Services we offer in the states of Canada"}
           />

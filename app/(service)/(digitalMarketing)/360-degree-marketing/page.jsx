@@ -154,9 +154,9 @@ const DegreeMarketing = () => {
   return (
     <div>
       <head>
-        <title>360-Degree Marketing  </title>
-        <meta title="360-Degree Marketing " />
-        <meta name="description" content="" />
+        <title>Tailored 360-Degree Digital Marketing Strategy for Success </title>
+        <meta title="Tailored 360-Degree Digital Marketing Strategy for Success " />
+        <meta name="description" content="Transform your digital presence with a tailored 360-degree marketing strategy from Wtechy. Drive engagement and achieve measurable success today!" />
       </head>
       <InnerBanner
         title={"360-Degree Marketing "}

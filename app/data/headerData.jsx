@@ -73,7 +73,7 @@ export const headerData = [
                     {
                         id: 10,
                         title: "seo for React Apps",
-                        link: "/seo-for react-apps"
+                        link: "/seo-for-react-apps"
                     },
                     {
                         id: 11,

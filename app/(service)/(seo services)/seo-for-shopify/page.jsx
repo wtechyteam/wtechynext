@@ -97,13 +97,13 @@ const SeoForShopify = () => {
     ];
   return (
     <div>
-      {/* <head>
-        <title>WordPress Website Development Services | Craft Your Website</title>
-        <meta title="WordPress Website Development Services | Craft Your Website"/>
+      <head>
+        <title>Shopify SEO Optimization for Better Traffic | Wtechy</title>
+        <meta title="Shopify SEO Optimization for Better Traffic | Wtechy"/>
         <meta
           name="description"
-          content="Attract & Convert Leads with a Custom WordPress Website Development services. Our Digital Marketing Agency Builds SEO-Friendly Websites on WordPress."/>
-      </head> */}
+          content="Looking to improve your online presence? Our Shopify SEO optimization services are tailored to increase traffic and elevate your brand visibility."/>
+      </head>
       <InnerBanner
         title={"SEO for Shopify "}
         info={

@@ -147,11 +147,11 @@ const OutsourcingOffshore = () => {
   return (
     <div>
       <head>
-      <title>Outsourcing | Offshore Services</title>
-        <meta title="Outsourcing | Offshore Services"/>
+      <title>Expert SEO Outsourcing Services Company | Wtechy</title>
+        <meta title="Expert SEO Outsourcing Services Company | Wtechy"/>
         <meta
           name="description"
-          content=""
+          content="Wtechy is a trusted SEO outsourcing company, offering custom strategies that enhance search engine performance and drive long-term organic traffic growth."
         />
       </head>
       <InnerBanner
