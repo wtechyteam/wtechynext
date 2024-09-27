@@ -5,7 +5,7 @@ import careerImage from "../../public/assets/Images/career/careerpage.png";
 import { fetchEntries } from "../contentful";
 import HomeSection3 from "./HomeSection3";
 import HomeSection4 from "./HomeSection4";
-import MyForm from "./../contact/contactForm";
+import MyForm from "../contact/contactForm";
 import ImageGrid from "./ImageGrid";
 
 const trainingTopics = [

@@ -227,6 +227,13 @@ export const headerData = [
         link: "/careers",
     },
     {
+        id:8,
+        title: "Corporate Trainings",
+        link: "/corporate-training-program",
+        metaTitle:'We are hiring - Exciting Career Opportunities at WTechy',
+        metaDescription:'Career Opportunities - Join our innovative team of dedicated professionals. Apply online now for open digital marketing & Web design and development positions.'
+    },
+    {
         title: "Contact",
         link: "/contact",
         customClass: "headerBtn"

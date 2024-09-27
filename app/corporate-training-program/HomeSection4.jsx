@@ -4,7 +4,7 @@ import { scrollTop } from '../../common/utils'
 import contact from './../../public/assets/Images/homepage/contact.png'
 import { BrowserRouter } from 'react-router-dom';
 import Image from 'next/image';
-import {useMounted} from "./../../common/unmounted"
+import {useMounted} from "../../common/unmounted"
 
 
 const HomeSection4 = () => {
